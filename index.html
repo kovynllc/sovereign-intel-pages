@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Intel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        sovereign: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-sovereign-950 min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                Sovereign Intel
+            </h1>
+            <p class="text-xl text-sovereign-100/70">
+                Executive Intelligence. Complete Privacy.
+            </p>
+        </div>
+
+        <!-- Main Card -->
+        <div class="bg-sovereign-900/50 backdrop-blur rounded-2xl border border-sovereign-700/50 p-8 md:p-12">
+            <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-sovereign-500/20 mb-6">
+                    <svg class="w-8 h-8 text-sovereign-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-white mb-4">
+                    Access Your Report
+                </h2>
+
+                <p class="text-sovereign-100/60 mb-8 max-w-md mx-auto">
+                    Enter your unique report ID to view your personalized executive intelligence briefing.
+                </p>
+
+                <form id="access-form" class="max-w-md mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input
+                            type="text"
+                            id="report-guid"
+                            placeholder="Enter your report ID"
+                            class="flex-1 px-4 py-3 rounded-lg bg-sovereign-800 border border-sovereign-700 text-white placeholder-sovereign-100/40 focus:outline-none focus:ring-2 focus:ring-sovereign-500 focus:border-transparent"
+                        >
+                        <button
+                            type="submit"
+                            class="px-6 py-3 bg-sovereign-500 hover:bg-sovereign-600 text-white font-medium rounded-lg transition-colors"
+                        >
+                            View Report
+                        </button>
+                    </div>
+                </form>
+
+                <p class="text-sovereign-100/40 text-sm mt-6">
+                    Your report ID was sent to your email
+                </p>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+            <div class="bg-sovereign-900/30 rounded-xl p-6 border border-sovereign-800/50">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-white font-semibold mb-2">100% Private</h3>
+                <p class="text-sovereign-100/50 text-sm">Your data never touches cloud AI services. All processing happens locally.</p>
+            </div>
+
+            <div class="bg-sovereign-900/30 rounded-xl p-6 border border-sovereign-800/50">
+                <div class="w-10 h-10 rounded-lg bg-amber-500/20 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-white font-semibold mb-2">Daily Updates</h3>
+                <p class="text-sovereign-100/50 text-sm">Fresh intelligence delivered every morning, ready for your 90-second briefing.</p>
+            </div>
+
+            <div class="bg-sovereign-900/30 rounded-xl p-6 border border-sovereign-800/50">
+                <div class="w-10 h-10 rounded-lg bg-violet-500/20 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-white font-semibold mb-2">Actionable Insights</h3>
+                <p class="text-sovereign-100/50 text-sm">Not just news summaries—strategic analysis with recommended actions.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-16 text-sovereign-100/40 text-sm">
+            <p>Sovereign Intel &copy; 2026</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('access-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const guid = document.getElementById('report-guid').value.trim();
+            if (guid) {
+                window.location.href = `report.html?id=${encodeURIComponent(guid)}`;
+            }
+        });
+
+        // Check for direct GUID in URL path
+        const pathMatch = window.location.pathname.match(/\/reports\/([a-f0-9-]+)/i);
+        if (pathMatch) {
+            window.location.href = `report.html?id=${pathMatch[1]}`;
+        }
+    </script>
+</body>
+</html>
