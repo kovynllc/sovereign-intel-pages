@@ -125,19 +125,52 @@ function renderDeltaInsights(insights) {
         return;
     }
 
-    container.innerHTML = insights.map(insight => `
-        <div class="border rounded-lg p-3 urgency-${insight.urgency_level || 'low'}">
-            <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-medium text-sovereign-100/60">${escapeHtml(insight.theme)}</span>
-                <span class="text-xs px-2 py-0.5 rounded ${
-                    insight.urgency_level === 'high' ? 'bg-red-500/20 text-red-300' :
-                    insight.urgency_level === 'medium' ? 'bg-amber-500/20 text-amber-300' :
-                    'bg-green-500/20 text-green-300'
-                }">${insight.urgency_level || 'low'}</span>
-            </div>
-            <p class="text-sovereign-100/80 text-sm">${escapeHtml(insight.change_description)}</p>
+    // Map urgency levels to better labels
+    const urgencyLabels = {
+        high: { label: 'Breaking', desc: 'Requires immediate attention' },
+        medium: { label: 'New', desc: 'Recent development' },
+        low: { label: 'Ongoing', desc: 'Continuing trend' }
+    };
+
+    // Legend + insights
+    const legend = `
+        <div class="flex flex-wrap gap-3 mb-4 pb-3 border-b border-sovereign-700/30 text-xs">
+            <span class="text-sovereign-100/40">Legend:</span>
+            <span class="flex items-center gap-1">
+                <span class="px-1.5 py-0.5 rounded bg-red-500/20 text-red-300">Breaking</span>
+                <span class="text-sovereign-100/40">= immediate attention</span>
+            </span>
+            <span class="flex items-center gap-1">
+                <span class="px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300">New</span>
+                <span class="text-sovereign-100/40">= recent development</span>
+            </span>
+            <span class="flex items-center gap-1">
+                <span class="px-1.5 py-0.5 rounded bg-green-500/20 text-green-300">Ongoing</span>
+                <span class="text-sovereign-100/40">= continuing trend</span>
+            </span>
         </div>
-    `).join('');
+    `;
+
+    const insightCards = insights.map(insight => {
+        const level = insight.urgency_level || 'low';
+        const { label } = urgencyLabels[level] || urgencyLabels.low;
+
+        return `
+            <div class="border rounded-lg p-3 urgency-${level}">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-medium text-sovereign-100/60">${escapeHtml(insight.theme)}</span>
+                    <span class="text-xs px-2 py-0.5 rounded ${
+                        level === 'high' ? 'bg-red-500/20 text-red-300' :
+                        level === 'medium' ? 'bg-amber-500/20 text-amber-300' :
+                        'bg-green-500/20 text-green-300'
+                    }">${label}</span>
+                </div>
+                <p class="text-sovereign-100/80 text-sm">${escapeHtml(insight.change_description)}</p>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = legend + insightCards;
 }
 
 // Render competitive intel
@@ -191,23 +224,56 @@ function renderRiskSignals(risks) {
         operational: '⚙️'
     };
 
-    container.innerHTML = risks.map(risk => `
-        <div class="bg-sovereign-800/30 rounded-lg p-4">
-            <div class="flex items-center justify-between mb-2">
-                <span class="text-sm">
-                    <span class="mr-1">${categoryIcons[risk.risk_category] || '⚠️'}</span>
-                    <span class="text-sovereign-100/60 capitalize">${escapeHtml(risk.risk_category)}</span>
-                </span>
-                <span class="text-xs likelihood-${risk.likelihood || 'low'}">
-                    ${escapeHtml(risk.likelihood || 'low')} likelihood
-                </span>
-            </div>
-            <p class="text-sovereign-100/80 text-sm mb-2">${escapeHtml(risk.description)}</p>
-            <p class="text-sovereign-100/50 text-xs">
-                <span class="text-sovereign-100/40">Monitor:</span> ${escapeHtml(risk.recommended_monitoring)}
-            </p>
+    // Map likelihood to better labels
+    const likelihoodLabels = {
+        high: { label: 'Likely', class: 'likelihood-high' },
+        medium: { label: 'Possible', class: 'likelihood-medium' },
+        low: { label: 'Emerging', class: 'likelihood-low' }
+    };
+
+    // Legend
+    const legend = `
+        <div class="flex flex-wrap gap-3 mb-4 pb-3 border-b border-sovereign-700/30 text-xs">
+            <span class="text-sovereign-100/40">Likelihood:</span>
+            <span class="flex items-center gap-1">
+                <span class="likelihood-high font-medium">Likely</span>
+                <span class="text-sovereign-100/40">= probable impact on business</span>
+            </span>
+            <span class="flex items-center gap-1">
+                <span class="likelihood-medium font-medium">Possible</span>
+                <span class="text-sovereign-100/40">= monitor for escalation</span>
+            </span>
+            <span class="flex items-center gap-1">
+                <span class="likelihood-low font-medium">Emerging</span>
+                <span class="text-sovereign-100/40">= early signal, low probability</span>
+            </span>
         </div>
-    `).join('');
+    `;
+
+    const riskCards = risks.map(risk => {
+        const level = risk.likelihood || 'low';
+        const { label, class: likelihoodClass } = likelihoodLabels[level] || likelihoodLabels.low;
+
+        return `
+            <div class="bg-sovereign-800/30 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm">
+                        <span class="mr-1">${categoryIcons[risk.risk_category] || '⚠️'}</span>
+                        <span class="text-sovereign-100/60 capitalize">${escapeHtml(risk.risk_category)}</span>
+                    </span>
+                    <span class="text-xs ${likelihoodClass} font-medium">
+                        ${label}
+                    </span>
+                </div>
+                <p class="text-sovereign-100/80 text-sm mb-2">${escapeHtml(risk.description)}</p>
+                <p class="text-sovereign-100/50 text-xs">
+                    <span class="text-sovereign-100/40">Monitor:</span> ${escapeHtml(risk.recommended_monitoring)}
+                </p>
+            </div>
+        `;
+    }).join('');
+
+    container.innerHTML = legend + riskCards;
 }
 
 // Render executives from knowledge graph
