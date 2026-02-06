@@ -210,6 +210,86 @@ function renderRiskSignals(risks) {
     `).join('');
 }
 
+// Render executives from knowledge graph
+function renderExecutives(executives) {
+    const container = document.getElementById('executives');
+
+    if (!executives || executives.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No executives identified</p>';
+        return;
+    }
+
+    // Group executives by company
+    const byCompany = {};
+    executives.forEach(exec => {
+        if (!byCompany[exec.company]) {
+            byCompany[exec.company] = [];
+        }
+        byCompany[exec.company].push(exec);
+    });
+
+    container.innerHTML = Object.entries(byCompany).map(([company, execs]) => `
+        <div class="bg-sovereign-800/30 rounded-lg p-3">
+            <div class="font-medium text-white mb-2">${escapeHtml(company)}</div>
+            <div class="space-y-1">
+                ${execs.map(exec => `
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-sovereign-100/80">${escapeHtml(exec.person)}</span>
+                        <span class="text-sovereign-100/50 text-xs">${escapeHtml(exec.role) || ''}</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+// Render competitive clusters from knowledge graph
+function renderCompetitiveClusters(clusters) {
+    const container = document.getElementById('competitive-clusters');
+
+    if (!clusters || clusters.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No competitive clusters identified</p>';
+        return;
+    }
+
+    // Sort by strength (descending) and take top 10
+    const topClusters = clusters
+        .sort((a, b) => b.strength - a.strength)
+        .slice(0, 10);
+
+    container.innerHTML = topClusters.map(cluster => `
+        <div class="bg-sovereign-800/30 rounded-lg p-3">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="font-medium text-white">${escapeHtml(cluster.company1)}</span>
+                <svg class="w-4 h-4 text-fuchsia-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+                <span class="font-medium text-white">${escapeHtml(cluster.company2)}</span>
+                <span class="ml-auto text-xs px-2 py-0.5 rounded bg-fuchsia-500/20 text-fuchsia-300">
+                    ${cluster.strength} ${cluster.strength === 1 ? 'theme' : 'themes'}
+                </span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+                ${cluster.shared_themes.map(theme => `
+                    <span class="text-xs px-2 py-0.5 bg-sovereign-700/50 text-sovereign-100/60 rounded">${escapeHtml(theme)}</span>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+// Render knowledge graph section
+function renderKnowledgeGraph(knowledgeGraph) {
+    if (!knowledgeGraph) {
+        renderExecutives([]);
+        renderCompetitiveClusters([]);
+        return;
+    }
+
+    renderExecutives(knowledgeGraph.executives);
+    renderCompetitiveClusters(knowledgeGraph.competitive_clusters);
+}
+
 // Render metadata
 function renderMetadata(metadata, generatedAt) {
     const container = document.getElementById('metadata');
@@ -265,6 +345,7 @@ async function loadReport() {
         renderDeltaInsights(data.sections?.delta_insights);
         renderCompetitiveIntel(data.sections?.competitive_intel);
         renderRiskSignals(data.sections?.risk_signals);
+        renderKnowledgeGraph(data.sections?.knowledge_graph);
         renderMetadata(data.metadata, data.generated_at);
 
         // Update page title

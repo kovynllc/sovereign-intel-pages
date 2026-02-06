@@ -1,135 +1,384 @@
 {
-  "generated_at": "2026-02-05T22:10:40.653368+00:00",
+  "generated_at": "2026-02-06T17:44:20.132182+00:00",
   "date_range": {
-    "start": "2026-02-04T22:10:40.696050+00:00",
-    "end": "2026-02-05T22:10:40.696050+00:00"
+    "start": "2026-02-05T17:44:20.132182+00:00",
+    "end": "2026-02-06T17:44:20.132182+00:00"
   },
-  "executive_summary": "The most significant development is the advancement in large language models, with OpenAI's GPT and Google's PaLM model achieving 562B parameters. This has led to increased investment in AI research and development, with Microsoft investing $10B in OpenAI.\n\nThe competitive landscape is shifting, with companies like Meta, Google, and Microsoft at the forefront. OpenAI's Claude, an AI chatbot with no advertisements, is a notable development. Google's Sundar Pichai highlighted Alphabet's Q4 earnings, mentioning Gemini 3 and its impact on the company's revenue.\n\nRisks to monitor include regulatory changes, market shifts, and cybersecurity threats. The European Commission is trialing the use of open-source software for internal communications, which may impact proprietary technology companies. Companies must also be aware of the increasing use of open-source software and its potential vulnerabilities.",
+  "executive_summary": "The most important development is the partnership between Commonwealth Bank of Australia and Melbourne Business School to measure public perceptions on AI adoption in banking. This initiative underscores a strategic move by CBA towards understanding customer sentiment, which could significantly impact its competitive positioning as it continues integrating advanced technologies like artificial intelligence into financial services.\n\nIn terms of changes within the industry's landscape: Broadridge Financial Solutions' acquisition of CQG aims at enhancing their capabilities to offer an end-to-end trading suite for global futures and options markets. Additionally, Cleo's return to market after being active in US since 2022 highlights a strategic move by Barney Hussey-Yeo (Cleo) capitalizing on the growing demand for AI-powered financial services.\n\nKey risks that need monitoring include regulatory concerns over deepfakes potentially weaponized against public trust and security; rapid growth of enterprise workers using AI tools, indicating high market interest but also competitive pressures in this space. Technological rivalry between Anthropic's Claude Opus 4.6 update versus OpenAI\u2019s GPT-5.3-Codex could disrupt the current dynamics among leading players like Microsoft.",
   "recommended_actions": [
-    "Monitor OpenAI's GPT and Google's PaLM model developments and assess their potential impact on your business.",
-    "Evaluate the competitive landscape and adjust your strategy to stay ahead of companies like Meta, Google, and Microsoft.",
-    "Assess the risks associated with open-source software and develop strategies to mitigate potential threats.",
-    "Consider investing in AI research and development to stay competitive in the market."
+    "Monitor regulatory developments related to deepfakes and ensure compliance with emerging guidelines from entities such as UK Home Office",
+    "Enhance competitive intelligence efforts by tracking market trends, especially in AI-powered financial services where CBA is a key player"
   ],
   "sections": {
     "key_themes": [
       {
-        "title": "Advances in AI and Large Language Models",
-        "significance": "The articles highlight recent advancements in AI, particularly in large language models, and their applications. Companies like OpenAI, Meta, and Google are at the forefront of these developments, with new models and capabilities being released regularly.",
+        "title": "AI Adoption and Sentiment in Banking",
+        "significance": "The growing adoption of AI in banking, with a focus on public perceptions and sentiment towards its use.",
         "affected_entities": [
-          "OpenAI",
-          "Meta",
-          "Google"
+          "Commonwealth Bank of Australia",
+          "Melbourne Business School"
         ]
       },
       {
-        "title": "Increased Focus on AI Research and Development",
-        "significance": "The articles suggest a growing emphasis on AI research and development, with many companies investing heavily in this area. This has led to the creation of new tools, technologies, and applications that are transforming industries and changing the way people live and work.",
+        "title": "Small Business Access to Capital and Tools",
+        "significance": "Visa's efforts to provide small businesses with better access to capital, customers, and business tools through its Visa & Main program.",
         "affected_entities": [
-          "Microsoft",
-          "Google",
-          "Meta"
+          "Visa",
+          "Lendistry"
         ]
       },
       {
-        "title": "Growing Importance of AI in Business and Industry",
-        "significance": "The articles highlight the increasing importance of AI in business and industry, with many companies using AI to drive innovation, improve efficiency, and enhance customer experiences. This trend is expected to continue, with AI playing an increasingly critical role in shaping the future of many industries.",
+        "title": "Deepfake Detection and Mitigation",
+        "significance": "The growing concern over deepfakes and the efforts of governments and tech companies to develop detection and mitigation frameworks.",
         "affected_entities": [
-          "Amazon",
-          "Google",
+          "UK Home Office",
           "Microsoft"
         ]
-      }
-    ],
-    "delta_insights": [
-      {
-        "theme": "Advances in AI and Large Language Models",
-        "change_description": "OpenAI, Meta, and Google have released new large language models, with OpenAI's model, GPT-4, being a significant advancement, and Google's PaLM model achieving 562B parameters.",
-        "urgency_level": "high"
       },
       {
-        "theme": "Increased Focus on AI Research and Development",
-        "change_description": "Microsoft invested $10B in OpenAI, and Google allocated $1B for AI research, indicating a growing emphasis on AI development.",
-        "urgency_level": "medium"
+        "title": "AI-Powered Financial Assistants and Tools",
+        "significance": "The development and deployment of AI-powered financial assistants like Cleo, which provide personalized financial coaching and insights.",
+        "affected_entities": [
+          "Cleo",
+          "Barney Hussey-Yeo"
+        ]
       },
       {
-        "theme": "Growing Importance of AI in Business and Industry",
-        "change_description": "Amazon integrated AI-powered Alexa into its smart home devices, and Google announced AI-driven features for its Google Workspace suite, highlighting AI's increasing role in business.",
-        "urgency_level": "high"
+        "title": "Mergers and Acquisitions in the Financial Technology Industry",
+        "significance": "The recent merger between Broadridge Financial Solutions and CQG, which aims to create an end-to-end trading suite for global futures and options markets.",
+        "affected_entities": [
+          "Broadridge Financial Solutions",
+          "CQG"
+        ]
       }
     ],
+    "delta_insights": [],
     "competitive_intel": [
       {
+        "company": "Commonwealth Bank of Australia",
+        "move_type": "partnership",
+        "description": "Partnering with Melbourne Business School to measure public perceptions of AI in banking.",
+        "strategic_implication": "Understanding public sentiment towards AI adoption is crucial for the bank's growth and competitiveness."
+      },
+      {
+        "company": "Visa",
+        "move_type": "product_launch|acquisition",
+        "description": "Launching a $100 million working capital facility with Lendistry to expand access to financing for small businesses.",
+        "strategic_implication": "This move aims to increase Visa's market share and provide more financial services to small businesses."
+      },
+      {
+        "company": "Broadridge Financial Solutions",
+        "move_type": "acquisition",
+        "description": "Acquiring CQG, a provider of futures and options trading execution management and market connectivity.",
+        "strategic_implication": "This acquisition enhances Broadridge's capabilities in the financial services industry."
+      },
+      {
+        "company": "Cleo",
+        "move_type": "product_launch|return_to_market",
+        "description": "Returning to the UK market after being active in the US since 2022.",
+        "strategic_implication": "This move aims to capitalize on the growing demand for AI-powered financial services in the UK."
+      },
+      {
         "company": "OpenAI",
-        "move_type": "product_launch",
-        "description": "Launched Claude, an AI chatbot with no advertisements",
-        "strategic_implication": "Positions Claude as a competitor to other AI chatbots, prioritizing user experience over revenue generation"
+        "move_type": "product_launch|update",
+        "description": "Releasing GPT-5.3-Codex, a more capable agentic coding model.",
+        "strategic_implication": "This update enhances OpenAI's capabilities in AI development and deployment."
       },
       {
         "company": "Anthropic",
-        "move_type": "product_launch",
-        "description": "Launched Claude, an AI chatbot with no advertisements",
-        "strategic_implication": "Competes with OpenAI's ChatGPT and other AI chatbots, focusing on user experience"
-      },
-      {
-        "company": "Google",
-        "move_type": "executive_change",
-        "description": "Sundar Pichai highlighted Alphabet's Q4 earnings, mentioning Gemini 3 and its impact on the company's revenue",
-        "strategic_implication": "Signals Google's focus on AI and machine learning, competing with other tech giants"
-      },
-      {
-        "company": "Meta",
-        "move_type": "expansion",
-        "description": "No specific expansion mentioned, but Meta's presence is noted in the competitive landscape",
-        "strategic_implication": "Implicitly competing with other tech giants, including Google, Microsoft, and OpenAI"
-      },
-      {
-        "company": "Microsoft",
-        "move_type": "acquisition",
-        "description": "No specific acquisition mentioned, but Microsoft's presence is noted in the competitive landscape",
-        "strategic_implication": "Implicitly competing with other tech giants, including Google, Meta, and OpenAI"
+        "move_type": "product_launch|update",
+        "description": "Releasing Claude Opus 4.6, a new version of its most capable AI model.",
+        "strategic_implication": "This update strengthens Anthropic's position in the AI development and deployment market."
       }
     ],
     "risk_signals": [
       {
         "risk_category": "regulatory",
-        "description": "The European Commission is trialing the use of open-source software for internal communications, which may indicate a shift in regulatory approach to technology adoption.",
-        "likelihood": "medium",
-        "recommended_monitoring": "EU's stance on open-source software and its impact on proprietary technology companies"
+        "description": "Deepfakes being weaponised by criminals to defraud the public, exploit women and girls, and undermine trust in what we see and hear.",
+        "likelihood": "high",
+        "recommended_monitoring": "Monitoring of deepfake-related crimes"
       },
       {
         "risk_category": "market",
-        "description": "The global market is experiencing a shift towards the adoption of open-source software, which may impact the revenue streams of proprietary technology companies.",
-        "likelihood": "high",
-        "recommended_monitoring": "Market share and revenue of proprietary technology companies"
+        "description": "AI adoption growing rapidly, with 75% of enterprise workers saying AI helped them do tasks they couldn\u2019t do before.",
+        "likelihood": "medium",
+        "recommended_monitoring": "Market trends and competition in AI-powered services"
       },
       {
         "risk_category": "technology",
-        "description": "The increasing use of open-source software may lead to a rise in cybersecurity threats, as open-source software can be more vulnerable to attacks.",
-        "likelihood": "low",
-        "recommended_monitoring": "Number of cybersecurity threats and attacks on open-source software"
+        "description": "Rival AI lab Anthropic releasing commercials mocking the idea of including ads in AI chatbot conversations, potentially causing backlash against OpenAI.",
+        "likelihood": "medium",
+        "recommended_monitoring": "OpenAI's response to Anthropic's marketing campaign"
       },
       {
         "risk_category": "competitive",
-        "description": "The growing adoption of open-source software may lead to increased competition among technology companies, potentially disrupting traditional business models.",
+        "description": "Anthropic and OpenAI shipping products built around the same idea of managing teams of AI agents, potentially disrupting the market.",
         "likelihood": "high",
-        "recommended_monitoring": "Competitive landscape and market share of technology companies"
-      },
-      {
-        "risk_category": "legal",
-        "description": "The use of open-source software may lead to increased scrutiny of licensing agreements and potential legal issues related to intellectual property.",
-        "likelihood": "medium",
-        "recommended_monitoring": "Licensing agreements and intellectual property laws"
+        "recommended_monitoring": "Market trends and competition in AI-powered services"
       }
-    ]
+    ],
+    "knowledge_graph": {
+      "executives": [
+        {
+          "person": "Clare Morgan",
+          "role": "",
+          "company": "ANZ"
+        },
+        {
+          "person": "Dan Kindler",
+          "role": "CTO",
+          "company": "Bound"
+        },
+        {
+          "person": "Seth Phillips",
+          "role": "CEO",
+          "company": "Bound"
+        },
+        {
+          "person": "Mark Fairless",
+          "role": "CEO",
+          "company": "ClearBank"
+        },
+        {
+          "person": "Neil Drennan",
+          "role": "Chief Technology Officer",
+          "company": "ClearBank"
+        },
+        {
+          "person": "Barney Hussey-Yeo",
+          "role": "Founder and CEO",
+          "company": "Cleo"
+        },
+        {
+          "person": "Will Mailer",
+          "role": "Chief Behavioural Scientist",
+          "company": "Commonwealth Bank of Australia"
+        },
+        {
+          "person": "David Schreiber",
+          "role": "",
+          "company": "Duna"
+        },
+        {
+          "person": "Duco Van Lanschot",
+          "role": "",
+          "company": "Duna"
+        },
+        {
+          "person": "Enrique Lores",
+          "role": "CEO and President",
+          "company": "HP"
+        },
+        {
+          "person": "Kate Rouch",
+          "role": "Chief Marketing Officer",
+          "company": "OpenAI"
+        },
+        {
+          "person": "Sam Altman",
+          "role": "CEO",
+          "company": "OpenAI"
+        },
+        {
+          "person": "Alex Chriss",
+          "role": "CEO",
+          "company": "PayPal"
+        },
+        {
+          "person": "Jamie Miller",
+          "role": "CFO and COO",
+          "company": "PayPal"
+        },
+        {
+          "person": "Liz Kendall",
+          "role": "Tech Secretary",
+          "company": "UK Home Office"
+        },
+        {
+          "person": "Kim Lawrence",
+          "role": "Regional President, North America",
+          "company": "Visa"
+        }
+      ],
+      "competitive_clusters": [
+        {
+          "company1": "Bound",
+          "company2": "Duna",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Regulatory Changes and Compliance",
+            "Investment and Funding"
+          ],
+          "strength": 3
+        },
+        {
+          "company1": "Bound",
+          "company2": "PayPal",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Investment and Funding"
+          ],
+          "strength": 2
+        },
+        {
+          "company1": "Bound",
+          "company2": "ClearBank",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Investment and Funding"
+          ],
+          "strength": 2
+        },
+        {
+          "company1": "ClearBank",
+          "company2": "Duna",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Investment and Funding"
+          ],
+          "strength": 2
+        },
+        {
+          "company1": "ClearBank",
+          "company2": "PayPal",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Investment and Funding"
+          ],
+          "strength": 2
+        },
+        {
+          "company1": "Duna",
+          "company2": "PayPal",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Investment and Funding"
+          ],
+          "strength": 2
+        },
+        {
+          "company1": "ANZ",
+          "company2": "Duna",
+          "shared_themes": [
+            "Fintech and Banking Innovation"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "ANZ",
+          "company2": "ClearBank",
+          "shared_themes": [
+            "Fintech and Banking Innovation"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "ANZ",
+          "company2": "PayPal",
+          "shared_themes": [
+            "Fintech and Banking Innovation"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "ANZ",
+          "company2": "Bound",
+          "shared_themes": [
+            "Fintech and Banking Innovation"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Alphabet's CapitalG",
+          "company2": "HP",
+          "shared_themes": [
+            "Industry Trends and Mergers"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Alphabet's CapitalG",
+          "company2": "Stripe",
+          "shared_themes": [
+            "Industry Trends and Mergers"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Barney Hussey-Yeo",
+          "company2": "Cleo",
+          "shared_themes": [
+            "AI-Powered Financial Assistants and Tools"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Bound",
+          "company2": "Remitly",
+          "shared_themes": [
+            "Regulatory Changes and Compliance"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Bound",
+          "company2": "YC",
+          "shared_themes": [
+            "Investment and Funding"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Broadridge Financial Solutions",
+          "company2": "CQG",
+          "shared_themes": [
+            "Mergers and Acquisitions in the Financial Technology Industry"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "ClearBank",
+          "company2": "YC",
+          "shared_themes": [
+            "Investment and Funding"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Codex",
+          "company2": "Google Cloud",
+          "shared_themes": [
+            "AI and Machine Learning"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Codex",
+          "company2": "OpenAI",
+          "shared_themes": [
+            "AI and Machine Learning"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Codex",
+          "company2": "Gemini",
+          "shared_themes": [
+            "AI and Machine Learning"
+          ],
+          "strength": 1
+        }
+      ]
+    }
   },
   "metadata": {
-    "model": "llama4:latest",
-    "article_count": 53,
-    "historical_article_count": 15,
-    "generation_start": "2026-02-05T21:07:43.891231+00:00",
-    "generation_complete": "2026-02-05T22:10:40.653368+00:00",
-    "source_count": 45,
-    "errors": null
+    "model": "swarm (qwen3:3b + phi4-mini:3.8b)",
+    "article_count": 19,
+    "historical_article_count": 0,
+    "generation_start": "2026-02-06T17:43:11.281789+00:00",
+    "generation_complete": "2026-02-06T17:44:20.132182+00:00",
+    "source_count": 19,
+    "errors": null,
+    "swarm_mode": true
   }
 }
