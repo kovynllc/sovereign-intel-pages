@@ -278,16 +278,108 @@ function renderCompetitiveClusters(clusters) {
     `).join('');
 }
 
+// Render multi-hop insights (connecting the dots)
+function renderMultiHopInsights(insights) {
+    const container = document.getElementById('multi-hop-insights');
+    if (!container) return;
+
+    if (!insights || insights.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No hidden connections discovered</p>';
+        return;
+    }
+
+    container.innerHTML = insights.slice(0, 6).map(insight => `
+        <div class="flex items-start gap-2 text-sm">
+            <svg class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <span class="text-sovereign-100/70">${escapeHtml(insight)}</span>
+        </div>
+    `).join('');
+}
+
+// Render theme validations (truth vs noise)
+function renderThemeValidations(validations) {
+    const container = document.getElementById('theme-validations');
+    if (!container) return;
+
+    if (!validations || validations.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No theme validation data</p>';
+        return;
+    }
+
+    container.innerHTML = validations.map(v => `
+        <div class="flex items-center justify-between text-sm py-1">
+            <span class="text-sovereign-100/80 truncate flex-1">${escapeHtml(v.theme)}</span>
+            <div class="flex items-center gap-2 ml-2">
+                <span class="text-xs ${v.is_validated ? 'text-green-400' : 'text-amber-400'}">
+                    ${v.is_validated ? 'Verified' : 'Unverified'}
+                </span>
+                <div class="w-16 h-1.5 bg-sovereign-700 rounded-full overflow-hidden">
+                    <div class="h-full ${v.is_validated ? 'bg-green-500' : 'bg-amber-500'}"
+                         style="width: ${Math.round(v.graph_support * 100)}%"></div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Render audit trails (explainability)
+function renderAuditTrails(trails) {
+    const container = document.getElementById('audit-trails');
+    if (!container) return;
+
+    if (!trails || trails.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No audit trail data</p>';
+        return;
+    }
+
+    // Group by type
+    const byType = {};
+    trails.forEach(trail => {
+        const type = trail.type || 'other';
+        if (!byType[type]) byType[type] = [];
+        byType[type].push(trail);
+    });
+
+    const typeLabels = {
+        theme: 'Themes',
+        competitive_intel: 'Competitive Intel',
+        risk: 'Risks'
+    };
+
+    container.innerHTML = Object.entries(byType).map(([type, items]) => `
+        <div class="mb-3">
+            <div class="text-xs text-sovereign-100/50 uppercase mb-1">${typeLabels[type] || type}</div>
+            ${items.slice(0, 3).map(trail => `
+                <div class="flex items-center justify-between text-sm py-1 border-b border-sovereign-700/30 last:border-0">
+                    <span class="text-sovereign-100/70 truncate flex-1">${escapeHtml(trail.summary.slice(0, 40))}...</span>
+                    <div class="flex items-center gap-1 ml-2">
+                        <span class="text-xs text-sovereign-100/40">${trail.supporting_entities.length} entities</span>
+                        <div class="w-8 h-1.5 bg-sovereign-700 rounded-full overflow-hidden">
+                            <div class="h-full bg-cyan-500" style="width: ${Math.round(trail.confidence * 100)}%"></div>
+                        </div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `).join('');
+}
+
 // Render knowledge graph section
 function renderKnowledgeGraph(knowledgeGraph) {
     if (!knowledgeGraph) {
         renderExecutives([]);
         renderCompetitiveClusters([]);
+        renderMultiHopInsights([]);
+        renderThemeValidations([]);
         return;
     }
 
     renderExecutives(knowledgeGraph.executives);
     renderCompetitiveClusters(knowledgeGraph.competitive_clusters);
+    renderMultiHopInsights(knowledgeGraph.multi_hop_insights);
+    renderThemeValidations(knowledgeGraph.theme_validations);
 }
 
 // Render metadata
@@ -346,6 +438,7 @@ async function loadReport() {
         renderCompetitiveIntel(data.sections?.competitive_intel);
         renderRiskSignals(data.sections?.risk_signals);
         renderKnowledgeGraph(data.sections?.knowledge_graph);
+        renderAuditTrails(data.sections?.audit_trails);
         renderMetadata(data.metadata, data.generated_at);
 
         // Update page title
