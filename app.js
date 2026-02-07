@@ -279,6 +279,7 @@ function renderRiskSignals(risks) {
 // Render executives from knowledge graph
 function renderExecutives(executives) {
     const container = document.getElementById('executives');
+    if (!container) return;
 
     if (!executives || executives.length === 0) {
         container.innerHTML = '<p class="text-sovereign-100/50 italic">No executives identified</p>';
