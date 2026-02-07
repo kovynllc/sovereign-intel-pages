@@ -357,7 +357,7 @@ function renderMultiHopInsights(insights) {
         return;
     }
 
-    container.innerHTML = insights.slice(0, 6).map(insight => `
+    const html = insights.slice(0, 6).map(insight => `
         <div class="flex items-start gap-2 text-sm">
             <svg class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -365,6 +365,9 @@ function renderMultiHopInsights(insights) {
             <span class="text-sovereign-100/70">${escapeHtml(insight)}</span>
         </div>
     `).join('');
+    console.log('multi-hop HTML output:', html.substring(0, 500));
+    container.innerHTML = html;
+    console.log('container after innerHTML:', container.innerHTML.substring(0, 200));
 }
 
 // Render theme validations (truth vs noise)
