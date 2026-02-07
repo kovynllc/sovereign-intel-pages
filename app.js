@@ -347,9 +347,7 @@ function renderCompetitiveClusters(clusters) {
 
 // Render multi-hop insights (connecting the dots)
 function renderMultiHopInsights(insights) {
-    console.log('renderMultiHopInsights called with:', insights);
     const container = document.getElementById('multi-hop-insights');
-    console.log('multi-hop-insights container:', container);
     if (!container) return;
 
     if (!insights || insights.length === 0) {
@@ -357,7 +355,7 @@ function renderMultiHopInsights(insights) {
         return;
     }
 
-    const html = insights.slice(0, 6).map(insight => `
+    container.innerHTML = insights.slice(0, 6).map(insight => `
         <div class="flex items-start gap-2 text-sm">
             <svg class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -365,9 +363,6 @@ function renderMultiHopInsights(insights) {
             <span class="text-sovereign-100/70">${escapeHtml(insight)}</span>
         </div>
     `).join('');
-    console.log('multi-hop HTML output:', html.substring(0, 500));
-    container.innerHTML = html;
-    console.log('container after innerHTML:', container.innerHTML.substring(0, 200));
 }
 
 // Render theme validations (truth vs noise)
@@ -603,10 +598,6 @@ function renderCommunities(communities) {
 
 // Render knowledge graph section
 function renderKnowledgeGraph(knowledgeGraph) {
-    console.log('renderKnowledgeGraph called with:', knowledgeGraph);
-    console.log('multi_hop_insights:', knowledgeGraph?.multi_hop_insights);
-    console.log('theme_validations:', knowledgeGraph?.theme_validations);
-
     if (!knowledgeGraph) {
         renderExecutives([]);
         renderCompetitiveClusters([]);
