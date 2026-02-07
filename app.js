@@ -390,7 +390,7 @@ function renderThemeValidations(validations) {
     `).join('');
 }
 
-// Render audit trails (explainability)
+// Render audit trails (explainability) with source click-through
 function renderAuditTrails(trails) {
     const container = document.getElementById('audit-trails');
     if (!container) return;
@@ -418,16 +418,179 @@ function renderAuditTrails(trails) {
         <div class="mb-3">
             <div class="text-xs text-sovereign-100/50 uppercase mb-1">${typeLabels[type] || type}</div>
             ${items.slice(0, 3).map(trail => `
-                <div class="flex items-center justify-between text-sm py-1 border-b border-sovereign-700/30 last:border-0">
-                    <span class="text-sovereign-100/70 truncate flex-1">${escapeHtml(trail.summary.slice(0, 40))}...</span>
-                    <div class="flex items-center gap-1 ml-2">
-                        <span class="text-xs text-sovereign-100/40">${trail.supporting_entities.length} entities</span>
-                        <div class="w-8 h-1.5 bg-sovereign-700 rounded-full overflow-hidden">
-                            <div class="h-full bg-cyan-500" style="width: ${Math.round(trail.confidence * 100)}%"></div>
+                <div class="py-2 border-b border-sovereign-700/30 last:border-0">
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-sovereign-100/70 truncate flex-1">${escapeHtml(trail.summary.slice(0, 40))}...</span>
+                        <div class="flex items-center gap-1 ml-2">
+                            <span class="text-xs text-sovereign-100/40">${trail.supporting_entities.length} entities</span>
+                            <div class="w-8 h-1.5 bg-sovereign-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-cyan-500" style="width: ${Math.round(trail.confidence * 100)}%"></div>
+                            </div>
                         </div>
                     </div>
+                    ${trail.sources && trail.sources.length > 0 ? `
+                        <div class="mt-1 flex flex-wrap gap-1">
+                            ${trail.sources.map(src => `
+                                <a href="${escapeHtml(src.url)}" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 bg-sovereign-700/50 text-cyan-400 hover:text-cyan-300 hover:bg-sovereign-700 rounded transition-colors">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                    ${escapeHtml(src.title.slice(0, 25))}${src.title.length > 25 ? '...' : ''}
+                                </a>
+                            `).join('')}
+                        </div>
+                    ` : ''}
                 </div>
             `).join('')}
+        </div>
+    `).join('');
+}
+
+// Render temporal trends (rising/falling topics)
+function renderTemporalTrends(trends) {
+    const container = document.getElementById('temporal-trends');
+    if (!container) return;
+
+    if (!trends) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No trend data available</p>';
+        return;
+    }
+
+    const directionColors = {
+        rising: 'text-green-400',
+        falling: 'text-red-400',
+        stable: 'text-sovereign-100/50',
+        emerging: 'text-amber-400'
+    };
+
+    const directionBg = {
+        rising: 'bg-green-500/20',
+        falling: 'bg-red-500/20',
+        stable: 'bg-sovereign-700/30',
+        emerging: 'bg-amber-500/20'
+    };
+
+    // Combine and sort all trends
+    const allTrends = [
+        ...(trends.emerging_topics || []),
+        ...(trends.entity_trends || []).filter(t => t.direction !== 'stable'),
+        ...(trends.theme_trends || []).filter(t => t.direction !== 'stable'),
+    ].slice(0, 8);
+
+    if (allTrends.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No significant trends detected</p>';
+        return;
+    }
+
+    // Add legend
+    const legend = `
+        <div class="flex flex-wrap gap-2 mb-3 text-xs">
+            <span class="text-green-400">↑ Rising</span>
+            <span class="text-red-400">↓ Falling</span>
+            <span class="text-amber-400">★ Emerging</span>
+            <span class="text-sovereign-100/50">→ Stable</span>
+        </div>
+    `;
+
+    container.innerHTML = legend + allTrends.map(trend => `
+        <div class="flex items-center justify-between py-1.5 border-b border-sovereign-700/30 last:border-0">
+            <div class="flex items-center gap-2 flex-1 min-w-0">
+                <span class="text-lg ${directionColors[trend.direction] || 'text-sovereign-100/50'}">
+                    ${escapeHtml(trend.direction_icon || '→')}
+                </span>
+                <span class="text-sm text-sovereign-100/80 truncate">${escapeHtml(trend.name)}</span>
+                <span class="text-xs px-1.5 py-0.5 rounded ${directionBg[trend.direction] || ''} ${directionColors[trend.direction] || ''}">
+                    ${trend.type || 'Topic'}
+                </span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-sovereign-100/50 ml-2">
+                <span>${trend.current_mentions || 0} mentions</span>
+                ${trend.previous_mentions !== undefined ? `
+                    <span class="text-sovereign-100/30">
+                        (was ${trend.previous_mentions})
+                    </span>
+                ` : ''}
+            </div>
+        </div>
+    `).join('');
+}
+
+// Render entity resolution (deduplication info)
+function renderEntityResolution(resolution) {
+    const container = document.getElementById('entity-resolution');
+    if (!container) return;
+
+    if (!resolution || !resolution.notable_merges || resolution.notable_merges.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No entity merges performed</p>';
+        return;
+    }
+
+    const stats = `
+        <div class="flex gap-4 mb-3 text-xs text-sovereign-100/60">
+            <span>${resolution.original_entity_count} entities found</span>
+            <span>→</span>
+            <span>${resolution.resolved_entity_count} unique</span>
+            <span class="text-cyan-400">(${resolution.entities_merged} merged)</span>
+        </div>
+    `;
+
+    container.innerHTML = stats + resolution.notable_merges.slice(0, 5).map(merge => `
+        <div class="py-1.5 border-b border-sovereign-700/30 last:border-0">
+            <div class="flex items-center gap-2 text-sm">
+                <span class="text-sovereign-100/80 font-medium">${escapeHtml(merge.canonical)}</span>
+                <span class="text-sovereign-100/40">←</span>
+                <span class="text-xs text-sovereign-100/50">
+                    ${merge.variants.slice(0, 3).map(v => escapeHtml(v)).join(', ')}
+                    ${merge.variants.length > 3 ? ` +${merge.variants.length - 3} more` : ''}
+                </span>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Render entity communities (clusters)
+function renderCommunities(communities) {
+    const container = document.getElementById('entity-communities');
+    if (!container) return;
+
+    if (!communities || !communities.communities || communities.communities.length === 0) {
+        container.innerHTML = '<p class="text-sovereign-100/50 italic">No entity clusters detected</p>';
+        return;
+    }
+
+    const stats = `
+        <div class="flex gap-4 mb-3 text-xs text-sovereign-100/60">
+            <span>${communities.total_entities} entities</span>
+            <span>→</span>
+            <span>${communities.community_count} clusters</span>
+            <span class="text-emerald-400">(${communities.clustered_entities} grouped)</span>
+        </div>
+    `;
+
+    container.innerHTML = stats + communities.communities.slice(0, 4).map(c => `
+        <div class="py-2 border-b border-sovereign-700/30 last:border-0">
+            <div class="flex items-center justify-between mb-1">
+                <span class="text-sm text-sovereign-100/80 font-medium">${escapeHtml(c.name)}</span>
+                <span class="text-xs px-1.5 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">
+                    ${c.size} entities
+                </span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+                ${c.core_entities.slice(0, 3).map(e => `
+                    <span class="text-xs px-1.5 py-0.5 bg-sovereign-700/50 text-sovereign-100/70 rounded">
+                        ${escapeHtml(e)}
+                    </span>
+                `).join('')}
+                ${c.members.length > 3 ? `
+                    <span class="text-xs text-sovereign-100/40">+${c.members.length - 3} more</span>
+                ` : ''}
+            </div>
+            ${c.shared_themes && c.shared_themes.length > 0 ? `
+                <div class="mt-1 text-xs text-sovereign-100/40">
+                    Themes: ${c.shared_themes.slice(0, 2).map(t => escapeHtml(t)).join(', ')}
+                </div>
+            ` : ''}
         </div>
     `).join('');
 }
@@ -505,6 +668,9 @@ async function loadReport() {
         renderRiskSignals(data.sections?.risk_signals);
         renderKnowledgeGraph(data.sections?.knowledge_graph);
         renderAuditTrails(data.sections?.audit_trails);
+        renderTemporalTrends(data.sections?.temporal_trends);
+        renderEntityResolution(data.sections?.entity_resolution);
+        renderCommunities(data.sections?.communities);
         renderMetadata(data.metadata, data.generated_at);
 
         // Update page title
