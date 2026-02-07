@@ -347,7 +347,9 @@ function renderCompetitiveClusters(clusters) {
 
 // Render multi-hop insights (connecting the dots)
 function renderMultiHopInsights(insights) {
+    console.log('renderMultiHopInsights called with:', insights);
     const container = document.getElementById('multi-hop-insights');
+    console.log('multi-hop-insights container:', container);
     if (!container) return;
 
     if (!insights || insights.length === 0) {
@@ -598,6 +600,10 @@ function renderCommunities(communities) {
 
 // Render knowledge graph section
 function renderKnowledgeGraph(knowledgeGraph) {
+    console.log('renderKnowledgeGraph called with:', knowledgeGraph);
+    console.log('multi_hop_insights:', knowledgeGraph?.multi_hop_insights);
+    console.log('theme_validations:', knowledgeGraph?.theme_validations);
+
     if (!knowledgeGraph) {
         renderExecutives([]);
         renderCompetitiveClusters([]);
