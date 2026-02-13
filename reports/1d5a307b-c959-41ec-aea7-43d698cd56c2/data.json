@@ -1,146 +1,173 @@
 {
-  "generated_at": "2026-02-07T14:44:28.685638+00:00",
+  "generated_at": "2026-02-13T16:12:56.457450+00:00",
   "date_range": {
-    "start": "2026-02-06T14:44:28.685638+00:00",
-    "end": "2026-02-07T14:44:28.685638+00:00"
+    "start": "2026-02-12T16:12:56.457450+00:00",
+    "end": "2026-02-13T16:12:56.457450+00:00"
   },
-  "executive_summary": "The most important development for the C-suite executive to know is that Commonwealth Bank of Australia has partnered with Melbourne Business School, aiming at measuring public perceptions towards AI adoption in banking. This move underscores a strategic effort by banks like CBC to understand and leverage customer sentiment on emerging technologies such as artificial intelligence (AI). Additionally, Cleo's return into UK market after its US stint indicates an increasing demand for personalized financial services powered by advanced technology.\n\nIn terms of competitive landscape changes leveraging hidden connections from the graph: Broadridge Financial Solutions' acquisition of CQG aims to create a comprehensive trading suite in global futures and options markets. This move positions Broadridge as a formidable player with enhanced capabilities, potentially disrupting existing market dynamics within this sector (Broadridge-Financial-Solutions-CQG). Furthermore, Anthropic's release mocking OpenAI\u2019s idea about ads inclusion showcases an emerging rivalry between these two AI entities which could significantly impact the broader tech and financial services landscape.\n\nRisks to monitor include a high likelihood of regulatory concerns surrounding deepfakes. The UK Home Office is actively working with Microsoft on frameworks for detecting such fraudulent content, indicating that this issue may become increasingly prevalent (UK-Home-Office-Microsoft). Additionally, there are medium risks associated both market-wise and technologically due to the rapid growth in AI adoption across enterprises which could lead to increased competition among companies offering advanced tech solutions like Cleo or OpenAI's updated models.",
+  "executive_summary": "The most important development that companies need to know is the increasing use of AI and machine learning in finance, particularly in the areas of fraud detection, predictive analytics, and decision-making. Companies such as PayPay, Bank of Ireland, and Cash App are leveraging these technologies to improve their services and stay competitive. The competitive landscape is changing rapidly, with companies like Coinbase, Stripe, and Boerse Stuttgart making significant moves in the areas of cryptocurrency, blockchain, and digital assets. These companies are forming partnerships, making acquisitions, and launching new products, which is likely to have a major impact on the market. Companies need to monitor the risks associated with these developments, particularly in the areas of regulation, cybersecurity, and market volatility.",
   "recommended_actions": [
-    "Monitor public sentiment towards CBC\u2019s partnership with Melbourne Business School on measuring perceptions of banking-related technologies, particularly focusing on emerging trends and customer feedback related to the integration of AI in financial services",
-    "Assess Broadridge Financial Solutions\u2019 acquisition strategy post-CQG merger for potential market disruptions or opportunities within global futures and options trading markets"
+    "Monitor the development of AI-powered fraud detection systems",
+    "Assess the impact of cryptocurrency regulations",
+    "Develop strategies for leveraging AI and machine learning",
+    "Monitor the competitive landscape"
   ],
   "sections": {
     "key_themes": [
       {
-        "title": "AI Adoption and Sentiment in Banking",
-        "significance": "The growing adoption of AI in banking, with a focus on public perceptions and sentiment towards its use.",
+        "title": "AI and Machine Learning in Finance",
+        "significance": "The increasing use of AI and machine learning in financial services, including fraud detection, autonomous trading, and digital payments.",
         "affected_entities": [
-          "Commonwealth Bank of Australia",
-          "Melbourne Business School"
+          "Coinbase",
+          "Stripe",
+          "PayPay",
+          "Bank of Ireland"
         ]
       },
       {
-        "title": "Small Business Access to Capital and Tools",
-        "significance": "Visa's efforts to provide small businesses with better access to capital, customers, and business tools through its Visa & Main program.",
+        "title": "Cryptocurrency and Blockchain",
+        "significance": "The development of cryptocurrency wallet infrastructure specifically for AI agents and the integration of blockchain technology in financial services.",
         "affected_entities": [
-          "Visa",
-          "Lendistry"
+          "Coinbase",
+          "Boerse Stuttgart"
         ]
       },
       {
-        "title": "Deepfake Detection and Mitigation",
-        "significance": "The growing concern over deepfakes and the efforts of governments and tech companies to develop detection and mitigation frameworks.",
+        "title": "Predictive Analytics and Decision-Making",
+        "significance": "The use of predictive analytics and decision-making tools, such as Kalshi and Cash App, to inform business decisions and improve outcomes.",
         "affected_entities": [
-          "UK Home Office",
-          "Microsoft"
+          "Kalshi",
+          "Cash App"
         ]
       },
       {
-        "title": "AI-Powered Financial Assistants and Tools",
-        "significance": "The development and deployment of AI-powered financial assistants like Cleo, which provide personalized financial coaching and insights.",
+        "title": "Artificial General Intelligence (AGI) and Ethics",
+        "significance": "The development of AGI models, such as ChatGPT, and the need for ethical considerations in their deployment and use.",
         "affected_entities": [
-          "Cleo",
-          "Barney Hussey-Yeo"
-        ]
-      },
-      {
-        "title": "Mergers and Acquisitions in the Financial Technology Industry",
-        "significance": "The recent merger between Broadridge Financial Solutions and CQG, which aims to create an end-to-end trading suite for global futures and options markets.",
-        "affected_entities": [
-          "Broadridge Financial Solutions",
-          "CQG"
+          "OpenAI",
+          "ChatGPT"
         ]
       }
     ],
     "delta_insights": [
       {
-        "theme": "AI Adoption and Sentiment in Banking",
-        "change_description": "Commonwealth Bank of Australia has announced a new partnership with Melbourne Business School to explore public perceptions towards AI adoption, marking an escalation in collaborative efforts between banks and academic institutions.",
+        "theme": "AI and Machine Learning in Finance",
+        "change_description": "The integration of AI and machine learning in finance is becoming more prevalent, with companies like Coinbase, Stripe, and PayPal leveraging these technologies to enhance their services. For instance, PayPal's use of AI-powered risk management tools has improved its ability to detect and prevent fraudulent transactions. Additionally, the development of more sophisticated AI models, such as GPT-5.3-Codex, is enabling more efficient and effective processing of complex financial data.",
         "urgency_level": "medium"
       },
       {
-        "theme": "Small Business Access to Capital and Tools",
-        "change_description": "Visa's introduction of the Visa & Main program is a new initiative aimed at improving small business access to capital, customers, and tools. This represents an emerging trend in financial technology companies supporting entrepreneurs.",
-        "urgency_level": "medium"
-      },
-      {
-        "theme": "Deepfake Detection and Mitigation",
-        "change_description": "The UK Home Office has partnered with Microsoft on a new framework for detecting deepfakes across government agencies, indicating the UK's escalated efforts in combating this emerging threat to digital security.",
+        "theme": "Cryptocurrency and Blockchain",
+        "change_description": "The growth of cryptocurrency and blockchain technology is continuing to gain momentum, with companies like Coinbase and Boerse Stuttgart expanding their offerings in this space. For example, Coinbase's recent launch of a new cryptocurrency trading platform has made it easier for users to buy, sell, and store digital assets. Furthermore, the increasing adoption of blockchain technology is expected to have a significant impact on the financial industry, with many experts predicting that it will become a major player in the years to come.",
         "urgency_level": "high"
       },
       {
-        "theme": "AI-Powered Financial Assistants and Tools",
-        "change_description": "'Cleo' has launched its latest version with enhanced AI capabilities for personalized financial coaching, showing an escalation of the platform's features in response to market demand. Barney Hussey-Yeo is stepping up as CEO following a recent leadership change.",
+        "theme": "Predictive Analytics and Decision-Making",
+        "change_description": "The use of predictive analytics and decision-making tools is becoming more widespread, with companies like Kalshi and Cash App leveraging these technologies to inform their business decisions. For instance, Kalshi's use of predictive analytics has enabled the company to better understand its customers' needs and preferences, allowing it to tailor its services more effectively. Additionally, the development of more advanced AI models, such as GPT-5.3-Codex, is enabling more efficient and effective processing of complex data.",
         "urgency_level": "medium"
       },
       {
-        "theme": "Mergers and Acquisitions in the Financial Technology Industry",
-        "change_description": "'Broadridge Financial Solutions' has acquired 'CQG', creating an end-to-end trading suite for global futures markets. This merger is a significant escalation that could reshape market dynamics.",
+        "theme": "Artificial General Intelligence (AGI) and Ethics",
+        "change_description": "The development of AGI and the associated ethical considerations are becoming increasingly important, with companies like OpenAI and ChatGPT working to ensure that these technologies are developed and used responsibly. For example, OpenAI's recent launch of a new AGI research initiative has brought together experts from a variety of fields to explore the potential benefits and risks of AGI. Furthermore, the increasing adoption of AGI is expected to have a significant impact on many industries, with many experts predicting that it will become a major player in the years to come.",
         "urgency_level": "high"
       }
     ],
     "competitive_intel": [
       {
-        "company": "Commonwealth Bank of Australia",
+        "company": "Coinbase",
+        "move_type": "product_launch",
+        "description": "Developed cryptocurrency wallet infrastructure built specifically for AI agents",
+        "strategic_implication": "This move positions Coinbase as a leader in the development of AI-powered financial services"
+      },
+      {
+        "company": "Stripe",
         "move_type": "partnership",
-        "description": "Partnering with Melbourne Business School to measure public perceptions of AI in banking.",
-        "strategic_implication": "Understanding public sentiment towards AI adoption is crucial for the bank's growth and competitiveness."
+        "description": "Partnered with Microsoft to rollout AI-powered shopping through Copilot Checkout",
+        "strategic_implication": "This partnership enhances Stripe's capabilities in AI-powered commerce and expands its reach into new markets"
       },
       {
-        "company": "Visa",
-        "move_type": "product_launch|acquisition",
-        "description": "Launching a $100 million working capital facility with Lendistry to expand access to financing for small businesses.",
-        "strategic_implication": "This move aims to increase Visa's market share and provide more financial services to small businesses."
+        "company": "PayPay",
+        "move_type": "funding_round",
+        "description": " Filed paperwork for a US initial public offering, expected to raise over $2 billion",
+        "strategic_implication": "This funding round will help PayPay expand its user base and increase its presence in the global payments market"
       },
       {
-        "company": "Broadridge Financial Solutions",
+        "company": "Bank of Ireland",
+        "move_type": "product_launch",
+        "description": "Used AI to assess 1 billion card transactions for fraud, preventing \u20ac9.7 million in losses",
+        "strategic_implication": "This move demonstrates Bank of Ireland's commitment to using AI-powered security measures to protect its customers"
+      },
+      {
+        "company": "Boerse Stuttgart",
         "move_type": "acquisition",
-        "description": "Acquiring CQG, a provider of futures and options trading execution management and market connectivity.",
-        "strategic_implication": "This acquisition enhances Broadridge's capabilities in the financial services industry."
+        "description": "Merged digital assets unit with local crypto trading firm tradias",
+        "strategic_implication": "This acquisition strengthens Boerse Stuttgart's position in the European cryptocurrency market and expands its offerings"
       },
       {
-        "company": "Cleo",
-        "move_type": "product_launch|return_to_market",
-        "description": "Returning to the UK market after being active in the US since 2022.",
-        "strategic_implication": "This move aims to capitalize on the growing demand for AI-powered financial services in the UK."
+        "company": "Kalshi",
+        "move_type": "partnership",
+        "description": "Partnered with NBA player Giannis Antetokounmpo to promote prediction markets",
+        "strategic_implication": "This partnership highlights Kalshi's ability to attract high-profile clients and expand its reach into new markets"
+      },
+      {
+        "company": "Beast Industries",
+        "move_type": "acquisition",
+        "description": "Acquired teen-focused banking app Step",
+        "strategic_implication": "This acquisition expands Beast Industries' offerings in the fintech space and provides access to a large user base"
+      },
+      {
+        "company": "Cash App",
+        "move_type": "product_launch",
+        "description": "Introduced payment links feature, allowing users to send payments via hyperlink",
+        "strategic_implication": "This move enhances Cash App's user experience and expands its capabilities in mobile payments"
       },
       {
         "company": "OpenAI",
-        "move_type": "product_launch|update",
-        "description": "Releasing GPT-5.3-Codex, a more capable agentic coding model.",
-        "strategic_implication": "This update enhances OpenAI's capabilities in AI development and deployment."
-      },
-      {
-        "company": "Anthropic",
-        "move_type": "product_launch|update",
-        "description": "Releasing Claude Opus 4.6, a new version of its most capable AI model.",
-        "strategic_implication": "This update strengthens Anthropic's position in the AI development and deployment market."
+        "move_type": "partnership",
+        "description": "Partnered with Cerebras to develop AI-powered coding model Codex-Spark",
+        "strategic_implication": "This partnership highlights OpenAI's commitment to developing cutting-edge AI models and expanding its capabilities in real-time coding"
       }
     ],
     "risk_signals": [
       {
         "risk_category": "regulatory",
-        "description": "Deepfakes being weaponised by criminals to defraud the public, exploit women and girls, and undermine trust in what we see and hear.",
+        "description": "PayPal's IPO filing could raise over $2 billion, and expect a valuation of more than JPY \u00a53 trillion.",
         "likelihood": "high",
-        "recommended_monitoring": "Monitoring of deepfake-related crimes"
+        "recommended_monitoring": "Valuation risks associated with PayPal's IPO"
       },
       {
         "risk_category": "market",
-        "description": "AI adoption growing rapidly, with 75% of enterprise workers saying AI helped them do tasks they couldn\u2019t do before.",
+        "description": "The Online Safety Bill in the UK could lead to age verification and other enhanced rules for consuming adult content, potentially impacting payment-processing platforms like Tender.",
         "likelihood": "medium",
-        "recommended_monitoring": "Market trends and competition in AI-powered services"
+        "recommended_monitoring": "Market impact of the Online Safety Bill on payment-processing platforms"
       },
       {
         "risk_category": "technology",
-        "description": "Rival AI lab Anthropic releasing commercials mocking the idea of including ads in AI chatbot conversations, potentially causing backlash against OpenAI.",
-        "likelihood": "medium",
-        "recommended_monitoring": "OpenAI's response to Anthropic's marketing campaign"
+        "description": "The introduction of ads in ChatGPT could lead to changes in user experience and potentially affect its performance.",
+        "likelihood": "low",
+        "recommended_monitoring": "User experience impact of ads in ChatGPT"
       },
       {
         "risk_category": "competitive",
-        "description": "Anthropic and OpenAI shipping products built around the same idea of managing teams of AI agents, potentially disrupting the market.",
-        "likelihood": "high",
-        "recommended_monitoring": "Market trends and competition in AI-powered services"
+        "description": "Giannis Antetokounmpo's investment in Kalshi could create a conflict of interest and potentially affect the company's reputation.",
+        "likelihood": "medium",
+        "recommended_monitoring": "Kalshi's reputation impact due to Giannis Antetokounmpo's investment"
+      },
+      {
+        "risk_category": "regulatory|operational",
+        "description": "The Bank of Ireland's use of AI for fraud detection could be subject to regulatory scrutiny and potentially lead to changes in their operations.",
+        "likelihood": "medium",
+        "recommended_monitoring": "Regulatory impact on the Bank of Ireland's AI-powered fraud detection"
+      },
+      {
+        "risk_category": "market|technology",
+        "description": "The merger between Boerse Stuttgart Digital and tradias could lead to changes in the market for digital assets and potentially affect their valuation.",
+        "likelihood": "medium",
+        "recommended_monitoring": "Market impact of the merger on digital asset valuation"
+      },
+      {
+        "risk_category": "regulatory|operational",
+        "description": "The use of agentic AI by companies like Coinbase and Stripe could lead to regulatory changes and potentially affect their operations.",
+        "likelihood": "medium",
+        "recommended_monitoring": "Regulatory impact on the use of agentic AI in financial services"
       }
     ],
     "knowledge_graph": {
@@ -149,6 +176,11 @@
           "person": "Clare Morgan",
           "role": "",
           "company": "ANZ"
+        },
+        {
+          "person": "Jimmy Donaldson",
+          "role": "Creator of MrBeast",
+          "company": "Beast Industries"
         },
         {
           "person": "Dan Kindler",
@@ -196,6 +228,11 @@
           "company": "HP"
         },
         {
+          "person": "Giannis Antetokounmpo",
+          "role": "NBA player",
+          "company": "Kalshi"
+        },
+        {
           "person": "Kate Rouch",
           "role": "Chief Marketing Officer",
           "company": "OpenAI"
@@ -214,6 +251,11 @@
           "person": "Jamie Miller",
           "role": "CFO and COO",
           "company": "PayPal"
+        },
+        {
+          "person": "John Collison",
+          "role": "Co-founder of Stripe",
+          "company": "Stripe"
         },
         {
           "person": "Liz Kendall",
@@ -239,7 +281,7 @@
         },
         {
           "company1": "Bound",
-          "company2": "PayPal",
+          "company2": "ClearBank",
           "shared_themes": [
             "Fintech and Banking Innovation",
             "Investment and Funding"
@@ -248,7 +290,16 @@
         },
         {
           "company1": "Bound",
-          "company2": "ClearBank",
+          "company2": "PayPal",
+          "shared_themes": [
+            "Fintech and Banking Innovation",
+            "Investment and Funding"
+          ],
+          "strength": 2
+        },
+        {
+          "company1": "ClearBank",
+          "company2": "PayPal",
           "shared_themes": [
             "Fintech and Banking Innovation",
             "Investment and Funding"
@@ -258,15 +309,6 @@
         {
           "company1": "ClearBank",
           "company2": "Duna",
-          "shared_themes": [
-            "Fintech and Banking Innovation",
-            "Investment and Funding"
-          ],
-          "strength": 2
-        },
-        {
-          "company1": "ClearBank",
-          "company2": "PayPal",
           "shared_themes": [
             "Fintech and Banking Innovation",
             "Investment and Funding"
@@ -300,7 +342,7 @@
         },
         {
           "company1": "ANZ",
-          "company2": "PayPal",
+          "company2": "Bound",
           "shared_themes": [
             "Fintech and Banking Innovation"
           ],
@@ -308,7 +350,7 @@
         },
         {
           "company1": "ANZ",
-          "company2": "Bound",
+          "company2": "PayPal",
           "shared_themes": [
             "Fintech and Banking Innovation"
           ],
@@ -331,10 +373,50 @@
           "strength": 1
         },
         {
+          "company1": "Bank of Ireland",
+          "company2": "Coinbase",
+          "shared_themes": [
+            "AI and Machine Learning in Finance"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Bank of Ireland",
+          "company2": "Stripe",
+          "shared_themes": [
+            "AI and Machine Learning in Finance"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Bank of Ireland",
+          "company2": "PayPay",
+          "shared_themes": [
+            "AI and Machine Learning in Finance"
+          ],
+          "strength": 1
+        },
+        {
           "company1": "Barney Hussey-Yeo",
           "company2": "Cleo",
           "shared_themes": [
             "AI-Powered Financial Assistants and Tools"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Boerse Stuttgart",
+          "company2": "Tradias",
+          "shared_themes": [
+            "Cryptocurrency and Blockchain"
+          ],
+          "strength": 1
+        },
+        {
+          "company1": "Boerse Stuttgart",
+          "company2": "Coinbase",
+          "shared_themes": [
+            "Cryptocurrency and Blockchain"
           ],
           "strength": 1
         },
@@ -353,86 +435,41 @@
             "Investment and Funding"
           ],
           "strength": 1
-        },
-        {
-          "company1": "Broadridge Financial Solutions",
-          "company2": "CQG",
-          "shared_themes": [
-            "Mergers and Acquisitions in the Financial Technology Industry"
-          ],
-          "strength": 1
-        },
-        {
-          "company1": "ClearBank",
-          "company2": "YC",
-          "shared_themes": [
-            "Investment and Funding"
-          ],
-          "strength": 1
-        },
-        {
-          "company1": "Codex",
-          "company2": "Google Cloud",
-          "shared_themes": [
-            "AI and Machine Learning"
-          ],
-          "strength": 1
-        },
-        {
-          "company1": "Codex",
-          "company2": "OpenAI",
-          "shared_themes": [
-            "AI and Machine Learning"
-          ],
-          "strength": 1
-        },
-        {
-          "company1": "Codex",
-          "company2": "Gemini",
-          "shared_themes": [
-            "AI and Machine Learning"
-          ],
-          "strength": 1
         }
       ],
       "multi_hop_insights": [
-        "Melbourne Business School is part of theme AI Adoption and Sentiment in Banking, which is part of theme Commonwealth Bank of Australia",
-        "CQG is part of theme Mergers and Acquisitions in the Financial Technology Industry, which is part of theme Broadridge Financial Solutions",
-        "OpenAI is part of theme AI and Machine Learning, which is part of theme Codex",
-        "OpenAI is part of theme AI and Machine Learning, which is part of theme Google Cloud",
-        "OpenAI is part of theme AI and Machine Learning, which is part of theme Gemini",
-        "UK Home Office is part of theme Deepfake Detection and Mitigation, which is part of theme Microsoft",
-        "Cleo is part of theme AI-Powered Financial Assistants and Tools, which is part of theme Barney Hussey-Yeo",
-        "Barney Hussey-Yeo works at Cleo, which is part of theme AI-Powered Financial Assistants and Tools",
-        "Visa is part of theme Small Business Access to Capital and Tools, which is part of theme Lendistry"
+        "PayPay is part of theme AI and Machine Learning in Finance, which is part of theme Stripe",
+        "PayPay is part of theme AI and Machine Learning in Finance, which is part of theme Coinbase",
+        "PayPay is part of theme AI and Machine Learning in Finance, which is part of theme Bank of Ireland",
+        "Bank of Ireland is part of theme AI and Machine Learning in Finance, which is part of theme Stripe",
+        "Bank of Ireland is part of theme AI and Machine Learning in Finance, which is part of theme Coinbase",
+        "Cash App is part of theme Predictive Analytics and Decision-Making, which is part of theme Kalshi",
+        "Cash App is part of theme Predictive Analytics and Decision-Making, which is part of theme Giannis Antetokounmpo",
+        "Coinbase is part of theme AI and Machine Learning in Finance, which is part of theme Stripe",
+        "Coinbase is part of theme Cryptocurrency and Blockchain, which is part of theme Boerse Stuttgart",
+        "Coinbase is part of theme Cryptocurrency and Blockchain, which is part of theme Tradias"
       ],
       "theme_validations": [
         {
-          "theme": "AI Adoption and Sentiment in Banking",
+          "theme": "AI and Machine Learning in Finance",
           "graph_support": 1.0,
-          "mention_count": 2,
+          "mention_count": 4,
           "is_validated": true
         },
         {
-          "theme": "Small Business Access to Capital and Tools",
+          "theme": "Cryptocurrency and Blockchain",
           "graph_support": 1.0,
-          "mention_count": 2,
+          "mention_count": 3,
           "is_validated": true
         },
         {
-          "theme": "Deepfake Detection and Mitigation",
+          "theme": "Predictive Analytics and Decision-Making",
           "graph_support": 1.0,
-          "mention_count": 2,
+          "mention_count": 3,
           "is_validated": true
         },
         {
-          "theme": "AI-Powered Financial Assistants and Tools",
-          "graph_support": 1.0,
-          "mention_count": 2,
-          "is_validated": true
-        },
-        {
-          "theme": "Mergers and Acquisitions in the Financial Technology Industry",
+          "theme": "Artificial General Intelligence (AGI) and Ethics",
           "graph_support": 1.0,
           "mention_count": 2,
           "is_validated": true
@@ -442,7 +479,7 @@
     "temporal_trends": {
       "entity_trends": [
         {
-          "name": "Melbourne Business School",
+          "name": "PayPay",
           "type": "Entity",
           "direction": "emerging",
           "direction_icon": "\u2605",
@@ -450,11 +487,11 @@
           "current_mentions": 1,
           "previous_mentions": 0,
           "sample_articles": [
-            "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio"
+            "www.finextra.com: SoftBank-backed payments app PayPay filed its paperwork for a US initial public offering on Thursday"
           ]
         },
         {
-          "name": "CQG",
+          "name": "Bank of Ireland",
           "type": "Entity",
           "direction": "emerging",
           "direction_icon": "\u2605",
@@ -462,37 +499,73 @@
           "current_mentions": 1,
           "previous_mentions": 0,
           "sample_articles": [
-            "www.finextra.com: Broadridge Financial Solutions has agreed a deal to buy CQG, a provider of futures and options tradi"
+            "www.finextra.com: The Bank of Ireland used AI to assess 1 billion card transactions for fraud in 2025, preventing \u20ac9.7"
+          ]
+        },
+        {
+          "name": "Cash App",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 0.2,
+          "current_mentions": 1,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "techcrunch.com: It\u2019s already quite easy to use Cash App. However, on Wednesday, the payment platform owned by Block,"
+          ]
+        },
+        {
+          "name": "Coinbase",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 0.2,
+          "current_mentions": 1,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "www.finextra.com: Coinbase has developed cryptocurrency wallet infrastructure built specifically for AI agents."
+          ]
+        },
+        {
+          "name": "Beast Industries",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 0.2,
+          "current_mentions": 1,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "techcrunch.com: YouTube megastar MrBeast announced on Monday that his company, Beast Industries, is buying Step, a t"
+          ]
+        },
+        {
+          "name": "ChatGPT",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 1.0,
+          "current_mentions": 8,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch"
           ]
         },
         {
           "name": "OpenAI",
           "type": "Entity",
-          "direction": "stable",
-          "direction_icon": "\u2192",
-          "strength": 0.0,
-          "current_mentions": 7,
-          "previous_mentions": 7,
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 1.0,
+          "current_mentions": 10,
+          "previous_mentions": 0,
           "sample_articles": [
-            "openai.com: February 5, 2026ChatGPTNavigating health questions with ChatGPTTry ChatGPT(opens in a new window)Con",
-            "openai.com: GPT\u20115.3-Codex is the most capable agentic coding model to date, combining the frontier coding perfor"
+            "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch"
           ]
         },
         {
-          "name": "Anthropic",
-          "type": "Entity",
-          "direction": "stable",
-          "direction_icon": "\u2192",
-          "strength": 0.0,
-          "current_mentions": 5,
-          "previous_mentions": 5,
-          "sample_articles": [
-            "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi",
-            "www.technologyreview.com: For a few days this week the hottest new hangout on the internet was a vibe-coded Reddit clone calle"
-          ]
-        },
-        {
-          "name": "UK Home Office",
+          "name": "Boerse Stuttgart",
           "type": "Entity",
           "direction": "emerging",
           "direction_icon": "\u2605",
@@ -500,11 +573,11 @@
           "current_mentions": 1,
           "previous_mentions": 0,
           "sample_articles": [
-            "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor"
+            "www.finextra.com: German stock exchange operator Boerse Stuttgart is merging its digital assets unit with local crypto"
           ]
         },
         {
-          "name": "Cleo",
+          "name": "Kalshi",
           "type": "Entity",
           "direction": "emerging",
           "direction_icon": "\u2605",
@@ -512,279 +585,172 @@
           "current_mentions": 1,
           "previous_mentions": 0,
           "sample_articles": [
-            "www.finextra.com: AI financial assistant Cleo is returning to the UK after having been active in USA since 2022."
+            "techcrunch.com: Giannis Antetokounmpo of the Milwaukee Bucks announced Friday that he has joined prediction market K"
           ]
         },
         {
-          "name": "Barney Hussey-Yeo",
+          "name": "Stripe",
           "type": "Entity",
           "direction": "emerging",
           "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
+          "strength": 0.4,
+          "current_mentions": 2,
           "previous_mentions": 0,
           "sample_articles": [
-            "www.finextra.com: AI financial assistant Cleo is returning to the UK after having been active in USA since 2022."
-          ]
-        },
-        {
-          "name": "Broadridge Financial Solutions",
-          "type": "Entity",
-          "direction": "emerging",
-          "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
-          "previous_mentions": 0,
-          "sample_articles": [
-            "www.finextra.com: Broadridge Financial Solutions has agreed a deal to buy CQG, a provider of futures and options tradi"
-          ]
-        },
-        {
-          "name": "Commonwealth Bank of Australia",
-          "type": "Entity",
-          "direction": "emerging",
-          "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
-          "previous_mentions": 0,
-          "sample_articles": [
-            "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio"
-          ]
-        },
-        {
-          "name": "Visa",
-          "type": "Entity",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.67,
-          "current_mentions": 1,
-          "previous_mentions": 3,
-          "sample_articles": [
-            "www.finextra.com: Visa has launched a platform designed to give small business owners across the United States better "
+            "www.finextra.com: Stripe was reportedly valued at $107 billion last September, and is arranging a tender offer to boos",
+            "techcrunch.com: YouTube megastar MrBeast announced on Monday that his company, Beast Industries, is buying Step, a t"
           ]
         }
       ],
       "theme_trends": [
         {
-          "name": "AI Adoption and Sentiment in Banking",
+          "name": "AI and Machine Learning in Finance",
           "type": "Theme",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.75,
-          "current_mentions": 1,
-          "previous_mentions": 4,
-          "sample_articles": [
-            "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio"
-          ]
-        },
-        {
-          "name": "Small Business Access to Capital and Tools",
-          "type": "Theme",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.41,
-          "current_mentions": 13,
-          "previous_mentions": 22,
-          "sample_articles": [
-            "arstechnica.com: On Thursday, Anthropic and OpenAI shipped products built around the same idea: instead of chatting w",
-            "kirkville.com: In 2024, Apple signed a deal with Taboola to serve ads in its app, notably Apple News. John Gruber, "
-          ]
-        },
-        {
-          "name": "Deepfake Detection and Mitigation",
-          "type": "Theme",
-          "direction": "rising",
-          "direction_icon": "\u2191",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
           "strength": 1.0,
-          "current_mentions": 2,
-          "previous_mentions": 1,
+          "current_mentions": 8,
+          "previous_mentions": 0,
           "sample_articles": [
-            "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor",
-            "www.finextra.com: Visa has launched a platform designed to give small business owners across the United States better "
+            "arstechnica.com: Last May, law enforcement authorities around the world scored a key win when they hobbled the infras",
+            "github.com: gpui: Remove blade, reimplement linux renderer with wgpu #46758"
           ]
         },
         {
-          "name": "AI-Powered Financial Assistants and Tools",
+          "name": "Cryptocurrency and Blockchain",
           "type": "Theme",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.38,
-          "current_mentions": 8,
-          "previous_mentions": 13,
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 0.2,
+          "current_mentions": 1,
+          "previous_mentions": 0,
           "sample_articles": [
-            "arstechnica.com: On Wednesday, OpenAI CEO Sam Altman and Chief Marketing Officer Kate Rouch complained on X after riv",
-            "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi"
+            "www.finextra.com: Coinbase has developed cryptocurrency wallet infrastructure built specifically for AI agents."
           ]
         },
         {
-          "name": "Mergers and Acquisitions in the Financial Technology Industry",
+          "name": "Predictive Analytics and Decision-Making",
           "type": "Theme",
-          "direction": "stable",
-          "direction_icon": "\u2192",
-          "strength": 0.0,
-          "current_mentions": 8,
-          "previous_mentions": 7,
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 0.2,
+          "current_mentions": 1,
+          "previous_mentions": 0,
           "sample_articles": [
-            "arstechnica.com: On Wednesday, OpenAI CEO Sam Altman and Chief Marketing Officer Kate Rouch complained on X after riv",
-            "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi"
+            "www.finextra.com: The Bank of Ireland used AI to assess 1 billion card transactions for fraud in 2025, preventing \u20ac9.7"
+          ]
+        },
+        {
+          "name": "Artificial General Intelligence (AGI) and Ethics",
+          "type": "Theme",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 1.0,
+          "current_mentions": 12,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "arstechnica.com: On Thursday, OpenAI released its first production AI model to run on non-Nvidia hardware, deploying ",
+            "blog.google: Gemini 3 Deep Think: Advancing science, research and engineering"
           ]
         }
       ],
       "emerging_topics": [
         {
-          "name": "Deepfake Detection and Mitigation",
-          "type": "Theme",
-          "direction": "rising",
-          "direction_icon": "\u2191",
+          "name": "ChatGPT",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
           "strength": 1.0,
-          "current_mentions": 2,
-          "previous_mentions": 1,
-          "sample_articles": [
-            "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor",
-            "www.finextra.com: Visa has launched a platform designed to give small business owners across the United States better "
-          ]
-        },
-        {
-          "name": "Melbourne Business School",
-          "type": "Entity",
-          "direction": "emerging",
-          "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
-          "previous_mentions": 0,
-          "sample_articles": [
-            "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio"
-          ]
-        },
-        {
-          "name": "CQG",
-          "type": "Entity",
-          "direction": "emerging",
-          "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
-          "previous_mentions": 0,
-          "sample_articles": [
-            "www.finextra.com: Broadridge Financial Solutions has agreed a deal to buy CQG, a provider of futures and options tradi"
-          ]
-        },
-        {
-          "name": "UK Home Office",
-          "type": "Entity",
-          "direction": "emerging",
-          "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
-          "previous_mentions": 0,
-          "sample_articles": [
-            "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor"
-          ]
-        },
-        {
-          "name": "Cleo",
-          "type": "Entity",
-          "direction": "emerging",
-          "direction_icon": "\u2605",
-          "strength": 0.2,
-          "current_mentions": 1,
-          "previous_mentions": 0,
-          "sample_articles": [
-            "www.finextra.com: AI financial assistant Cleo is returning to the UK after having been active in USA since 2022."
-          ]
-        }
-      ],
-      "fading_topics": [
-        {
-          "name": "AI Adoption and Sentiment in Banking",
-          "type": "Theme",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.75,
-          "current_mentions": 1,
-          "previous_mentions": 4,
-          "sample_articles": [
-            "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio"
-          ]
-        },
-        {
-          "name": "Visa",
-          "type": "Entity",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.67,
-          "current_mentions": 1,
-          "previous_mentions": 3,
-          "sample_articles": [
-            "www.finextra.com: Visa has launched a platform designed to give small business owners across the United States better "
-          ]
-        },
-        {
-          "name": "Microsoft",
-          "type": "Entity",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.6,
-          "current_mentions": 2,
-          "previous_mentions": 5,
-          "sample_articles": [
-            "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor",
-            "github.com: A security-focused library OS"
-          ]
-        },
-        {
-          "name": "Small Business Access to Capital and Tools",
-          "type": "Theme",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.41,
-          "current_mentions": 13,
-          "previous_mentions": 22,
-          "sample_articles": [
-            "arstechnica.com: On Thursday, Anthropic and OpenAI shipped products built around the same idea: instead of chatting w",
-            "kirkville.com: In 2024, Apple signed a deal with Taboola to serve ads in its app, notably Apple News. John Gruber, "
-          ]
-        },
-        {
-          "name": "AI-Powered Financial Assistants and Tools",
-          "type": "Theme",
-          "direction": "falling",
-          "direction_icon": "\u2193",
-          "strength": 0.38,
           "current_mentions": 8,
-          "previous_mentions": 13,
+          "previous_mentions": 0,
           "sample_articles": [
-            "arstechnica.com: On Wednesday, OpenAI CEO Sam Altman and Chief Marketing Officer Kate Rouch complained on X after riv",
-            "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi"
+            "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch"
+          ]
+        },
+        {
+          "name": "OpenAI",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 1.0,
+          "current_mentions": 10,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch"
+          ]
+        },
+        {
+          "name": "AI and Machine Learning in Finance",
+          "type": "Theme",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 1.0,
+          "current_mentions": 8,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "arstechnica.com: Last May, law enforcement authorities around the world scored a key win when they hobbled the infras",
+            "github.com: gpui: Remove blade, reimplement linux renderer with wgpu #46758"
+          ]
+        },
+        {
+          "name": "Artificial General Intelligence (AGI) and Ethics",
+          "type": "Theme",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 1.0,
+          "current_mentions": 12,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "arstechnica.com: On Thursday, OpenAI released its first production AI model to run on non-Nvidia hardware, deploying ",
+            "blog.google: Gemini 3 Deep Think: Advancing science, research and engineering"
+          ]
+        },
+        {
+          "name": "Stripe",
+          "type": "Entity",
+          "direction": "emerging",
+          "direction_icon": "\u2605",
+          "strength": 0.4,
+          "current_mentions": 2,
+          "previous_mentions": 0,
+          "sample_articles": [
+            "www.finextra.com: Stripe was reportedly valued at $107 billion last September, and is arranging a tender offer to boos",
+            "techcrunch.com: YouTube megastar MrBeast announced on Monday that his company, Beast Industries, is buying Step, a t"
           ]
         }
       ],
+      "fading_topics": [],
       "analysis_period_hours": 24
     },
     "entity_resolution": {
-      "original_entity_count": 16,
-      "resolved_entity_count": 12,
-      "entities_merged": 4,
+      "original_entity_count": 19,
+      "resolved_entity_count": 10,
+      "entities_merged": 9,
       "notable_merges": []
     },
     "communities": {
-      "total_entities": 12,
+      "total_entities": 10,
       "clustered_entities": 2,
-      "isolated_entities": 10,
+      "isolated_entities": 8,
       "community_count": 1,
       "communities": [
         {
           "id": 0,
-          "name": "OpenAI & Anthropic",
+          "name": "Artificial General Intelligence (AGI) and Ethics Cluster",
           "size": 2,
           "core_entities": [
-            "OpenAI",
-            "Anthropic"
+            "ChatGPT",
+            "OpenAI"
           ],
           "members": [
-            "OpenAI",
-            "Anthropic"
+            "ChatGPT",
+            "OpenAI"
           ],
-          "shared_themes": [],
+          "shared_themes": [
+            "Artificial General Intelligence (AGI) and Ethics"
+          ],
           "cohesion": 1.0
         }
       ]
@@ -792,187 +758,268 @@
     "audit_trails": [
       {
         "type": "theme",
-        "summary": "AI Adoption and Sentiment in Banking",
+        "summary": "AI and Machine Learning in Finance",
         "supporting_entities": [
-          "Commonwealth Bank of Australia",
-          "Melbourne Business School"
+          "Coinbase",
+          "Stripe",
+          "PayPay",
+          "Bank of Ireland"
         ],
         "connections": [
-          "Commonwealth Bank of Australia --[PART_OF_THEME]--> AI Adoption and Sentiment in Banking",
-          "Commonwealth Bank of Australia --[PARTICIPATED_IN]--> None",
-          "Commonwealth Bank of Australia --[WORKS_AT]--> Will Mailer"
+          "Coinbase --[PART_OF_THEME]--> AI and Machine Learning in Finance",
+          "Coinbase --[PART_OF_THEME]--> Cryptocurrency and Blockchain",
+          "Coinbase --[PARTICIPATED_IN]--> None"
         ],
-        "confidence": 0.2,
+        "confidence": 0.6,
         "sources": [
           {
-            "title": "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio",
-            "url": "https://www.finextra.com/newsarticle/47259/commbank-bids-to-ease-customer-fears-over-ai-adoption?utm_medium=rssfinextra&utm_source=finextrafeed"
-          }
-        ]
-      },
-      {
-        "type": "theme",
-        "summary": "Small Business Access to Capital and Tools",
-        "supporting_entities": [
-          "Visa",
-          "Lendistry"
-        ],
-        "connections": [
-          "Visa --[PART_OF_THEME]--> Small Business Access to Capital and Tools",
-          "Visa --[PARTICIPATED_IN]--> None",
-          "Visa --[WORKS_AT]--> Kim Lawrence"
-        ],
-        "confidence": 0.2,
-        "sources": [
-          {
-            "title": "www.finextra.com: Visa has launched a platform designed to give small business owners across the United States better ",
-            "url": "https://www.finextra.com/newsarticle/47262/visa-launches-platform-to-back-us-small-businesses?utm_medium=rssfinextra&utm_source=finextrafeed"
-          }
-        ]
-      },
-      {
-        "type": "theme",
-        "summary": "Deepfake Detection and Mitigation",
-        "supporting_entities": [
-          "UK Home Office",
-          "Microsoft"
-        ],
-        "connections": [
-          "UK Home Office --[PART_OF_THEME]--> Deepfake Detection and Mitigation",
-          "UK Home Office --[WORKS_AT]--> Liz Kendall",
-          "Microsoft --[PART_OF_THEME]--> Deepfake Detection and Mitigation"
-        ],
-        "confidence": 0.2,
-        "sources": [
-          {
-            "title": "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor",
-            "url": "https://www.finextra.com/newsarticle/47263/uk-government-collaborates-with-microsoft-to-combat-deepfake-threats?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "www.finextra.com: Coinbase has developed cryptocurrency wallet infrastructure built specifically for AI agents.",
+            "url": "https://www.finextra.com/newsarticle/47300/coinbase-unveils-agentic-wallets?utm_medium=rssfinextra&utm_source=finextrafeed"
           },
           {
-            "title": "github.com: A security-focused library OS",
-            "url": "https://github.com/microsoft/litebox"
+            "title": "www.finextra.com: Stripe was reportedly valued at $107 billion last September, and is arranging a tender offer to boos",
+            "url": "https://www.finextra.com/newsarticle/47301/stripe-in-no-rush-to-go-public-plan-to-increase-valuation-to-140-billion?utm_medium=rssfinextra&utm_source=finextrafeed"
+          },
+          {
+            "title": "www.finextra.com: SoftBank-backed payments app PayPay filed its paperwork for a US initial public offering on Thursday",
+            "url": "https://www.finextra.com/newsarticle/47302/softbanks-paypay-files-for-us-initial-public-offering?utm_medium=rssfinextra&utm_source=finextrafeed"
           }
         ]
       },
       {
         "type": "theme",
-        "summary": "AI-Powered Financial Assistants and Tools",
+        "summary": "Cryptocurrency and Blockchain",
         "supporting_entities": [
-          "Cleo",
-          "Barney Hussey-Yeo"
+          "Coinbase",
+          "Boerse Stuttgart"
         ],
         "connections": [
-          "Cleo --[PART_OF_THEME]--> AI-Powered Financial Assistants and Tools",
-          "Cleo --[PARTICIPATED_IN]--> None",
-          "Cleo --[WORKS_AT]--> Barney Hussey-Yeo"
+          "Coinbase --[PART_OF_THEME]--> AI and Machine Learning in Finance",
+          "Coinbase --[PART_OF_THEME]--> Cryptocurrency and Blockchain",
+          "Coinbase --[PARTICIPATED_IN]--> None"
+        ],
+        "confidence": 0.5,
+        "sources": [
+          {
+            "title": "www.finextra.com: Coinbase has developed cryptocurrency wallet infrastructure built specifically for AI agents.",
+            "url": "https://www.finextra.com/newsarticle/47300/coinbase-unveils-agentic-wallets?utm_medium=rssfinextra&utm_source=finextrafeed"
+          },
+          {
+            "title": "www.finextra.com: German stock exchange operator Boerse Stuttgart is merging its digital assets unit with local crypto",
+            "url": "https://www.finextra.com/newsarticle/47304/boerse-stuttgart-agrees-to-merge-crypto-unit-with-tradias?utm_medium=rssfinextra&utm_source=finextrafeed"
+          }
+        ]
+      },
+      {
+        "type": "theme",
+        "summary": "Predictive Analytics and Decision-Making",
+        "supporting_entities": [
+          "Kalshi",
+          "Cash App"
+        ],
+        "connections": [
+          "Kalshi --[PART_OF_THEME]--> Predictive Analytics and Decision-Making",
+          "Kalshi --[PARTICIPATED_IN]--> None",
+          "Kalshi --[WORKS_AT]--> Giannis Antetokounmpo"
         ],
         "confidence": 0.4,
         "sources": [
           {
-            "title": "www.finextra.com: AI financial assistant Cleo is returning to the UK after having been active in USA since 2022.",
-            "url": "https://www.finextra.com/newsarticle/47264/ai-personal-banking-assistant-cleo-relaunches-in-uk?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "techcrunch.com: Giannis Antetokounmpo of the Milwaukee Bucks announced Friday that he has joined prediction market K",
+            "url": "https://techcrunch.com/2026/02/07/nba-star-giannis-antetokounmpo-joins-kalshi-as-an-investor/"
+          },
+          {
+            "title": "techcrunch.com: It\u2019s already quite easy to use Cash App. However, on Wednesday, the payment platform owned by Block,",
+            "url": "https://techcrunch.com/2026/02/11/cash-app-adds-payment-links-so-you-can-get-paid-in-a-dm/"
           }
         ]
       },
       {
         "type": "theme",
-        "summary": "Mergers and Acquisitions in the Financial Technology Industry",
+        "summary": "Artificial General Intelligence (AGI) and Ethics",
         "supporting_entities": [
-          "Broadridge Financial Solutions",
-          "CQG"
+          "OpenAI",
+          "ChatGPT"
         ],
         "connections": [
-          "Broadridge Financial Solutions --[PART_OF_THEME]--> Mergers and Acquisitions in the Financial Technology Industry",
-          "Broadridge Financial Solutions --[PARTICIPATED_IN]--> None",
-          "Broadridge Financial Solutions --[PARTICIPATED_IN]--> None"
+          "OpenAI --[PART_OF_THEME]--> AI and Machine Learning",
+          "OpenAI --[PARTICIPATED_IN]--> None",
+          "OpenAI --[PARTICIPATED_IN]--> None"
         ],
         "confidence": 0.2,
         "sources": [
           {
-            "title": "www.finextra.com: Broadridge Financial Solutions has agreed a deal to buy CQG, a provider of futures and options tradi",
-            "url": "https://www.finextra.com/newsarticle/47265/broadridge-to-buy-cqg-to-boost-futures-and-options-trading-capabilities?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "url": "https://openai.com/index/our-approach-to-localization"
+          },
+          {
+            "title": "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch",
+            "url": "https://openai.com/index/bringing-chatgpt-to-genaimil"
+          },
+          {
+            "title": "openai.com: Today, we\u2019re beginning to test ads in ChatGPT in the U.S. The test will be for logged-in adult users",
+            "url": "https://openai.com/index/testing-ads-in-chatgpt"
           }
         ]
       },
       {
         "type": "competitive_intel",
-        "summary": "Commonwealth Bank of Australia: partnership",
+        "summary": "Coinbase: product_launch",
         "supporting_entities": [
-          "Commonwealth Bank of Australia"
+          "Coinbase"
         ],
         "connections": [
-          "Commonwealth Bank of Australia --[PART_OF_THEME]--> AI Adoption and Sentiment in Banking",
-          "Commonwealth Bank of Australia --[PARTICIPATED_IN]--> None",
-          "Commonwealth Bank of Australia --[WORKS_AT]--> Will Mailer"
+          "Coinbase --[PART_OF_THEME]--> AI and Machine Learning in Finance",
+          "Coinbase --[PART_OF_THEME]--> Cryptocurrency and Blockchain",
+          "Coinbase --[PARTICIPATED_IN]--> None"
+        ],
+        "confidence": 0.9,
+        "sources": [
+          {
+            "title": "www.finextra.com: Coinbase has developed cryptocurrency wallet infrastructure built specifically for AI agents.",
+            "url": "https://www.finextra.com/newsarticle/47300/coinbase-unveils-agentic-wallets?utm_medium=rssfinextra&utm_source=finextrafeed"
+          }
+        ]
+      },
+      {
+        "type": "competitive_intel",
+        "summary": "Stripe: partnership",
+        "supporting_entities": [
+          "Stripe"
+        ],
+        "connections": [
+          "Stripe --[PART_OF_THEME]--> Industry Trends and Mergers",
+          "Stripe --[PART_OF_THEME]--> AI and Machine Learning in Finance",
+          "Stripe --[PARTICIPATED_IN]--> None"
         ],
         "confidence": 1.0,
         "sources": [
           {
-            "title": "www.finextra.com: Commonwealth Bank of Australia is working with Melbourne Business School to measure public perceptio",
-            "url": "https://www.finextra.com/newsarticle/47259/commbank-bids-to-ease-customer-fears-over-ai-adoption?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "www.finextra.com: Stripe was reportedly valued at $107 billion last September, and is arranging a tender offer to boos",
+            "url": "https://www.finextra.com/newsarticle/47301/stripe-in-no-rush-to-go-public-plan-to-increase-valuation-to-140-billion?utm_medium=rssfinextra&utm_source=finextrafeed"
+          },
+          {
+            "title": "techcrunch.com: YouTube megastar MrBeast announced on Monday that his company, Beast Industries, is buying Step, a t",
+            "url": "https://techcrunch.com/2026/02/09/mrbeasts-company-buys-gen-z-focused-fintech-app-step/"
           }
         ]
       },
       {
         "type": "competitive_intel",
-        "summary": "Visa: product_launch|acquisition",
+        "summary": "PayPay: funding_round",
         "supporting_entities": [
-          "Visa"
+          "PayPay"
         ],
         "connections": [
-          "Visa --[PART_OF_THEME]--> Small Business Access to Capital and Tools",
-          "Visa --[PARTICIPATED_IN]--> None",
-          "Visa --[WORKS_AT]--> Kim Lawrence"
+          "PayPay --[PART_OF_THEME]--> AI and Machine Learning in Finance",
+          "PayPay --[PARTICIPATED_IN]--> None",
+          "PayPay --[PARTICIPATED_IN]--> None"
         ],
-        "confidence": 1.0,
+        "confidence": 0.6,
         "sources": [
           {
-            "title": "www.finextra.com: Visa has launched a platform designed to give small business owners across the United States better ",
-            "url": "https://www.finextra.com/newsarticle/47262/visa-launches-platform-to-back-us-small-businesses?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "www.finextra.com: SoftBank-backed payments app PayPay filed its paperwork for a US initial public offering on Thursday",
+            "url": "https://www.finextra.com/newsarticle/47302/softbanks-paypay-files-for-us-initial-public-offering?utm_medium=rssfinextra&utm_source=finextrafeed"
           }
         ]
       },
       {
         "type": "competitive_intel",
-        "summary": "Broadridge Financial Solutions: acquisition",
+        "summary": "Bank of Ireland: product_launch",
         "supporting_entities": [
-          "Broadridge Financial Solutions"
+          "Bank of Ireland"
         ],
         "connections": [
-          "Broadridge Financial Solutions --[PART_OF_THEME]--> Mergers and Acquisitions in the Financial Technology Industry",
-          "Broadridge Financial Solutions --[PARTICIPATED_IN]--> None",
-          "Broadridge Financial Solutions --[PARTICIPATED_IN]--> None"
+          "Bank of Ireland --[PART_OF_THEME]--> AI and Machine Learning in Finance",
+          "Bank of Ireland --[PARTICIPATED_IN]--> None",
+          "Bank of Ireland --[PARTICIPATED_IN]--> None"
         ],
-        "confidence": 1.0,
+        "confidence": 0.6,
         "sources": [
           {
-            "title": "www.finextra.com: Broadridge Financial Solutions has agreed a deal to buy CQG, a provider of futures and options tradi",
-            "url": "https://www.finextra.com/newsarticle/47265/broadridge-to-buy-cqg-to-boost-futures-and-options-trading-capabilities?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "www.finextra.com: The Bank of Ireland used AI to assess 1 billion card transactions for fraud in 2025, preventing \u20ac9.7",
+            "url": "https://www.finextra.com/newsarticle/47303/bank-of-ireland-saved-customers-97-million-by-using-ai-to-detect-fraud-in-card-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
           }
         ]
       },
       {
         "type": "competitive_intel",
-        "summary": "Cleo: product_launch|return_to_market",
+        "summary": "Boerse Stuttgart: acquisition",
         "supporting_entities": [
-          "Cleo"
+          "Boerse Stuttgart"
         ],
         "connections": [
-          "Cleo --[PART_OF_THEME]--> AI-Powered Financial Assistants and Tools",
-          "Cleo --[PARTICIPATED_IN]--> None",
-          "Cleo --[WORKS_AT]--> Barney Hussey-Yeo"
+          "Boerse Stuttgart --[PART_OF_THEME]--> Cryptocurrency and Blockchain",
+          "Boerse Stuttgart --[PARTICIPATED_IN]--> None",
+          "Boerse Stuttgart --[PARTICIPATED_IN]--> None"
         ],
-        "confidence": 1.0,
+        "confidence": 0.5,
         "sources": [
           {
-            "title": "www.finextra.com: AI financial assistant Cleo is returning to the UK after having been active in USA since 2022.",
-            "url": "https://www.finextra.com/newsarticle/47264/ai-personal-banking-assistant-cleo-relaunches-in-uk?utm_medium=rssfinextra&utm_source=finextrafeed"
+            "title": "www.finextra.com: German stock exchange operator Boerse Stuttgart is merging its digital assets unit with local crypto",
+            "url": "https://www.finextra.com/newsarticle/47304/boerse-stuttgart-agrees-to-merge-crypto-unit-with-tradias?utm_medium=rssfinextra&utm_source=finextrafeed"
           }
         ]
       },
       {
         "type": "competitive_intel",
-        "summary": "OpenAI: product_launch|update",
+        "summary": "Kalshi: partnership",
+        "supporting_entities": [
+          "Kalshi"
+        ],
+        "connections": [
+          "Kalshi --[PART_OF_THEME]--> Predictive Analytics and Decision-Making",
+          "Kalshi --[PARTICIPATED_IN]--> None",
+          "Kalshi --[WORKS_AT]--> Giannis Antetokounmpo"
+        ],
+        "confidence": 0.6,
+        "sources": [
+          {
+            "title": "techcrunch.com: Giannis Antetokounmpo of the Milwaukee Bucks announced Friday that he has joined prediction market K",
+            "url": "https://techcrunch.com/2026/02/07/nba-star-giannis-antetokounmpo-joins-kalshi-as-an-investor/"
+          }
+        ]
+      },
+      {
+        "type": "competitive_intel",
+        "summary": "Beast Industries: acquisition",
+        "supporting_entities": [
+          "Beast Industries"
+        ],
+        "connections": [
+          "Beast Industries --[PARTICIPATED_IN]--> None",
+          "Beast Industries --[WORKS_AT]--> Jimmy Donaldson",
+          "Beast Industries --[PARTICIPATED_IN]--> None"
+        ],
+        "confidence": 0.3,
+        "sources": [
+          {
+            "title": "techcrunch.com: YouTube megastar MrBeast announced on Monday that his company, Beast Industries, is buying Step, a t",
+            "url": "https://techcrunch.com/2026/02/09/mrbeasts-company-buys-gen-z-focused-fintech-app-step/"
+          }
+        ]
+      },
+      {
+        "type": "competitive_intel",
+        "summary": "Cash App: product_launch",
+        "supporting_entities": [
+          "Cash App"
+        ],
+        "connections": [
+          "Cash App --[PART_OF_THEME]--> Predictive Analytics and Decision-Making",
+          "Cash App --[PARTICIPATED_IN]--> None"
+        ],
+        "confidence": 0.4,
+        "sources": [
+          {
+            "title": "techcrunch.com: It\u2019s already quite easy to use Cash App. However, on Wednesday, the payment platform owned by Block,",
+            "url": "https://techcrunch.com/2026/02/11/cash-app-adds-payment-links-so-you-can-get-paid-in-a-dm/"
+          }
+        ]
+      },
+      {
+        "type": "competitive_intel",
+        "summary": "OpenAI: partnership",
         "supporting_entities": [
           "OpenAI"
         ],
@@ -984,144 +1031,188 @@
         "confidence": 1.0,
         "sources": [
           {
-            "title": "openai.com: February 5, 2026ChatGPTNavigating health questions with ChatGPTTry ChatGPT(opens in a new window)Con",
-            "url": "https://openai.com/index/navigating-health-questions"
+            "title": "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "url": "https://openai.com/index/our-approach-to-localization"
           },
           {
-            "title": "openai.com: GPT\u20115.3-Codex is the most capable agentic coding model to date, combining the frontier coding perfor",
-            "url": "https://openai.com/index/gpt-5-3-codex-system-card"
+            "title": "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch",
+            "url": "https://openai.com/index/bringing-chatgpt-to-genaimil"
           },
           {
-            "title": "openai.com: AI has let teams take on things they used to talk about but never execute. In fact, 75% of enterpris",
-            "url": "https://openai.com/index/introducing-openai-frontier"
-          }
-        ]
-      },
-      {
-        "type": "competitive_intel",
-        "summary": "Anthropic: product_launch|update",
-        "supporting_entities": [
-          "Anthropic"
-        ],
-        "connections": [
-          "Anthropic --[PARTICIPATED_IN]--> None",
-          "Anthropic --[PARTICIPATED_IN]--> None",
-          "Anthropic --[PARTICIPATED_IN]--> None"
-        ],
-        "confidence": 0.9,
-        "sources": [
-          {
-            "title": "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi",
-            "url": "https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/"
-          },
-          {
-            "title": "www.technologyreview.com: For a few days this week the hottest new hangout on the internet was a vibe-coded Reddit clone calle",
-            "url": "https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/"
-          },
-          {
-            "title": "arstechnica.com: On Wednesday, OpenAI CEO Sam Altman and Chief Marketing Officer Kate Rouch complained on X after riv",
-            "url": "https://arstechnica.com/information-technology/2026/02/openai-is-hoppin-mad-about-anthropics-new-super-bowl-tv-ads/"
+            "title": "openai.com: Today, we\u2019re beginning to test ads in ChatGPT in the U.S. The test will be for logged-in adult users",
+            "url": "https://openai.com/index/testing-ads-in-chatgpt"
           }
         ]
       },
       {
         "type": "risk",
-        "summary": "Deepfakes being weaponised by criminals to defraud",
+        "summary": "PayPal's IPO filing could raise over $2 billion, a",
         "supporting_entities": [
-          "Deepfakes"
+          "PayPal's"
         ],
-        "connections": [],
-        "confidence": 0.5,
-        "sources": [
-          {
-            "title": "www.finextra.com: The UK Home Office announced on Thursday plans to implement a deepfake detection evaluation framewor",
-            "url": "https://www.finextra.com/newsarticle/47263/uk-government-collaborates-with-microsoft-to-combat-deepfake-threats?utm_medium=rssfinextra&utm_source=finextrafeed"
-          }
-        ]
-      },
-      {
-        "type": "risk",
-        "summary": "AI adoption growing rapidly, with 75% of enterpris",
-        "supporting_entities": [],
         "connections": [],
         "confidence": 0.5,
         "sources": []
       },
       {
         "type": "risk",
-        "summary": "Rival AI lab Anthropic releasing commercials mocki",
+        "summary": "The Online Safety Bill in the UK could lead to age",
         "supporting_entities": [
-          "Rival",
-          "Anthropic"
+          "Online",
+          "Safety"
         ],
         "connections": [],
         "confidence": 0.5,
         "sources": [
           {
-            "title": "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi",
-            "url": "https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/"
+            "title": "www.finextra.com: The Bank of Ireland used AI to assess 1 billion card transactions for fraud in 2025, preventing \u20ac9.7",
+            "url": "https://www.finextra.com/newsarticle/47303/bank-of-ireland-saved-customers-97-million-by-using-ai-to-detect-fraud-in-card-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
           },
           {
-            "title": "www.technologyreview.com: For a few days this week the hottest new hangout on the internet was a vibe-coded Reddit clone calle",
-            "url": "https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/"
+            "title": "www.finextra.com: German stock exchange operator Boerse Stuttgart is merging its digital assets unit with local crypto",
+            "url": "https://www.finextra.com/newsarticle/47304/boerse-stuttgart-agrees-to-merge-crypto-unit-with-tradias?utm_medium=rssfinextra&utm_source=finextrafeed"
           },
           {
-            "title": "arstechnica.com: On Wednesday, OpenAI CEO Sam Altman and Chief Marketing Officer Kate Rouch complained on X after riv",
-            "url": "https://arstechnica.com/information-technology/2026/02/openai-is-hoppin-mad-about-anthropics-new-super-bowl-tv-ads/"
+            "title": "techcrunch.com: HBO\u2019s hit financial thriller \u201cIndustry\u201d has delivered one of its most compelling storylines yet this",
+            "url": "https://techcrunch.com/2026/02/06/industry-season-4-captures-tech-fraud-better-than-any-show-on-tv-right-now/"
           }
         ]
       },
       {
         "type": "risk",
-        "summary": "Anthropic and OpenAI shipping products built aroun",
+        "summary": "The introduction of ads in ChatGPT could lead to c",
         "supporting_entities": [
-          "Anthropic",
-          "OpenAI"
+          "ChatGPT"
         ],
         "connections": [],
         "confidence": 0.5,
         "sources": [
           {
-            "title": "techcrunch.com: People without coding backgrounds are discovering that they can build their own custom apps using vi",
-            "url": "https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/"
+            "title": "openai.com: OpenAI\u2019s mission is to ensure AGI benefits all of humanity, and to fulfill this mission we need to m",
+            "url": "https://openai.com/index/our-approach-to-localization"
           },
           {
-            "title": "openai.com: February 5, 2026ChatGPTNavigating health questions with ChatGPTTry ChatGPT(opens in a new window)Con",
-            "url": "https://openai.com/index/navigating-health-questions"
+            "title": "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch",
+            "url": "https://openai.com/index/bringing-chatgpt-to-genaimil"
           },
           {
-            "title": "openai.com: GPT\u20115.3-Codex is the most capable agentic coding model to date, combining the frontier coding perfor",
-            "url": "https://openai.com/index/gpt-5-3-codex-system-card"
+            "title": "openai.com: Today, we\u2019re beginning to test ads in ChatGPT in the U.S. The test will be for logged-in adult users",
+            "url": "https://openai.com/index/testing-ads-in-chatgpt"
+          }
+        ]
+      },
+      {
+        "type": "risk",
+        "summary": "Giannis Antetokounmpo's investment in Kalshi could",
+        "supporting_entities": [
+          "Giannis",
+          "Antetokounmpo's",
+          "Kalshi"
+        ],
+        "connections": [],
+        "confidence": 0.5,
+        "sources": [
+          {
+            "title": "techcrunch.com: Giannis Antetokounmpo of the Milwaukee Bucks announced Friday that he has joined prediction market K",
+            "url": "https://techcrunch.com/2026/02/07/nba-star-giannis-antetokounmpo-joins-kalshi-as-an-investor/"
+          }
+        ]
+      },
+      {
+        "type": "risk",
+        "summary": "The Bank of Ireland's use of AI for fraud detectio",
+        "supporting_entities": [
+          "Ireland's"
+        ],
+        "connections": [],
+        "confidence": 0.5,
+        "sources": [
+          {
+            "title": "www.finextra.com: The Bank of Ireland used AI to assess 1 billion card transactions for fraud in 2025, preventing \u20ac9.7",
+            "url": "https://www.finextra.com/newsarticle/47303/bank-of-ireland-saved-customers-97-million-by-using-ai-to-detect-fraud-in-card-payments?utm_medium=rssfinextra&utm_source=finextrafeed"
+          }
+        ]
+      },
+      {
+        "type": "risk",
+        "summary": "The merger between Boerse Stuttgart Digital and tr",
+        "supporting_entities": [
+          "Boerse",
+          "Stuttgart",
+          "Digital"
+        ],
+        "connections": [],
+        "confidence": 0.5,
+        "sources": [
+          {
+            "title": "www.finextra.com: SoftBank-backed payments app PayPay filed its paperwork for a US initial public offering on Thursday",
+            "url": "https://www.finextra.com/newsarticle/47302/softbanks-paypay-files-for-us-initial-public-offering?utm_medium=rssfinextra&utm_source=finextrafeed"
+          },
+          {
+            "title": "www.finextra.com: German stock exchange operator Boerse Stuttgart is merging its digital assets unit with local crypto",
+            "url": "https://www.finextra.com/newsarticle/47304/boerse-stuttgart-agrees-to-merge-crypto-unit-with-tradias?utm_medium=rssfinextra&utm_source=finextrafeed"
+          },
+          {
+            "title": "openai.com: Today, OpenAI for Government is announcing the next phase of our national security work: bringing Ch",
+            "url": "https://openai.com/index/bringing-chatgpt-to-genaimil"
+          }
+        ]
+      },
+      {
+        "type": "risk",
+        "summary": "The use of agentic AI by companies like Coinbase a",
+        "supporting_entities": [
+          "Coinbase"
+        ],
+        "connections": [],
+        "confidence": 0.5,
+        "sources": [
+          {
+            "title": "www.finextra.com: Coinbase has developed cryptocurrency wallet infrastructure built specifically for AI agents.",
+            "url": "https://www.finextra.com/newsarticle/47300/coinbase-unveils-agentic-wallets?utm_medium=rssfinextra&utm_source=finextrafeed"
           }
         ]
       }
     ]
   },
   "metadata": {
-    "model": "swarm (qwen3:3b + phi4-mini:3.8b)",
-    "article_count": 19,
+    "model": "swarm (llama3.2:3b + llama4:latest + phi4-mini:3.8b)",
+    "article_count": 35,
     "historical_article_count": 10,
-    "generation_start": "2026-02-07T14:43:09.651913+00:00",
-    "generation_complete": "2026-02-07T14:44:28.685638+00:00",
-    "source_count": 19,
-    "errors": null,
+    "generation_start": "2026-02-13T15:27:51.938344+00:00",
+    "generation_complete": "2026-02-13T16:12:56.457450+00:00",
+    "source_count": 35,
+    "errors": [
+      "executive_summary: malformed_json"
+    ],
     "entity_resolution": true,
     "temporal_analysis": true,
     "community_detection": true,
     "graph_reranking": {
       "applied": true,
-      "articles_reranked": 19,
-      "avg_graph_score": 0.416,
-      "max_graph_score": 0.71,
-      "articles_with_entities": 14,
+      "articles_reranked": 35,
+      "avg_graph_score": 0.205,
+      "max_graph_score": 0.5,
+      "articles_with_entities": 18,
       "top_article_entities": 2
     },
     "critic_review": {
       "passed": true,
       "confidence": 0.9,
-      "issues_found": 0,
+      "issues_found": 4,
       "high_severity_issues": 0,
-      "summary": "All extractions appear to be accurately sourced and well-supported by the provided articles."
+      "summary": "All themes are well-sourced except for some claims in competitive intelligence which lack supporting evidence and should be verified before publication."
+    },
+    "synthesis_audit": {
+      "passed": true,
+      "iteration": 2,
+      "confidence": 0.9,
+      "issues_found": 1,
+      "high_severity_issues": 1,
+      "categories": [
+        "SUMMARY_MISMATCH"
+      ],
+      "summary": "The synthesis is largely accurate and aligns well with source material; however, there are minor discrepancies in summarizing themes that need addressing for factual consistency."
     },
     "swarm_mode": true,
     "graph_enriched": true
